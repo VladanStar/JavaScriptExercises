@@ -42,3 +42,16 @@ o.increment = function (amount) {
 }
 console.log(o.increment());
 console.log(o.increment(3));
+
+
+function Car() { }
+    Car.prototype.wheels = 4;
+    Car.prototype.steeringWheel = 1;
+    Car.prototype.color = "metallic";
+
+    var car1 = new Car();
+    var car2 = new Car();
+    console.log(car1.stereo);
+    console.log(car2.gps);
+console.log(car1.steeringWheel);
+console.log(car2.steeringWheel);
