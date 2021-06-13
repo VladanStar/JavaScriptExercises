@@ -4,12 +4,12 @@
   background: red;
 }
 #wrapp {
-  width: 40%;
+  width: 60%;
   border: 1px solid rgb(218, 215, 215);
   margin: 2px ;
 }
 .tabovi {
-  width: 60%;
+  width: 100%;
 }
 .naslovi {
   width: 100%;
@@ -21,7 +21,7 @@
   border-bottom: 1px solid darkblue;
 }
 .podnaslovi {
-  text-align: center;
+  text-align: left;
   background: yellowgreen;
   border-top: 1px solid silver;
 }
