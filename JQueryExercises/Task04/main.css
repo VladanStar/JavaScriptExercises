@@ -1,0 +1,27 @@
+#box {
+  width: 150px;
+  height: 150px;
+  background: red;
+}
+#wrapp {
+  width: 40%;
+  border: 1px solid gray;
+  margin: 2px auto;
+}
+.tabovi {
+  width: 100%;
+}
+.naslovi {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.3em;
+  background: greenyellow;
+  text-align: center;
+  border-bottom: 1px solid darkblue;
+}
+.podnaslovi {
+  text-align: center;
+  background: yellowgreen;
+  border-top: 1px solid silver;
+}
