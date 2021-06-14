@@ -1,3 +1,7 @@
 jQuery(document).ready(function($){
-    $('#wrapp').append('Some text');
-})
+    $('div:not(#wrapp)').append('<div class="close">x</div>');
+    $('.close').on('click',function(event){
+        $(this).parent().hide();
+    })
+});
+
