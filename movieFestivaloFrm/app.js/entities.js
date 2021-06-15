@@ -27,7 +27,7 @@ class Program {
     }
 
 getData() {
-    return `${this.date}, TBA`;
+    return `{this.date}, TBA`;
 
 };
 };
