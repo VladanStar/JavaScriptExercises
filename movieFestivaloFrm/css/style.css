@@ -1,0 +1,55 @@
+body {
+    background-color:skyblue;
+}
+
+cf::before,
+cf::after{
+    content: "";
+    display: table;
+}
+
+cf::after{
+    clear: both;
+}
+h1{
+    text-align: center;
+}
+form{
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding:20px;
+}
+form label {
+    display: block;
+    padding-bottom: 10px;
+}
+form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30px;
+}
+form select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#button-movie,
+#button-program,
+#add-movie-button{
+    height: 45px;
+    background-color:coral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#movie-list {
+float: left;
+}
+
+#total-length{
+    float: right;
+}
+.validation {
+    color:red;
+}

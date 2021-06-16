@@ -5,92 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Movie festival
-    </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <h1>Movie list</h1>
-        <h5>Please fill the form</h5>
 
-        <h3>Movie</h3>
+    <h1>Movie Festival</h1>
+    <form>
+        <fieldset class="cf">
+            <legend>Movie</legend>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Title">
+            <label for="length">Length(min)</label>
+            <input type="number" id="duration" name="duration" placeholder="Length in min">
+            <select name="genre" id="genre">
+                <option value="">-</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horror</option>
+            </select>
+            <div class="validation-output first"></div>
+            <input type="button" id="button-movie" value="Create movie">
+            <ul id="movie-list"></ul>
+            <div id="total-length"></div>
+         </fieldset>
 
-        <form action="" method="POST">
-            <div class="form-group">
-                <label>Title </label>
-                <input type="text" name="movie-title" class="form-control" id="title" required="required">
+         <fieldset>
+             <legend>Program</legend>
+             <label for="date">Date:</label>
+             <input type="date" id="date">
+             <div class="validation-output second"></div>
+             <input type="button" id="button-program" value="Create Program">
+             <ul id="program-info"></ul>
 
-                <label>Length(min)</label>
+             <hr>
 
-                <input type="number" name="movie-length" class="form-control" id="length" required="required">
-                <br>
-                <div >
-                    <select class="form-control" id="genre-select">
-                        <option value="-">-</option>
-                        <option value="drama">Drama</option>
-                        <option value="action">Action</option>
-                        <option value="horror">Horror</option>
-                        <option value="comedy">Comedy</option>
-                        <option value="adventure">Adventure</option>
-                    </select>
-                </div>
-            </div>
-            <br>
-            <div id="error"></div>
-            <button type="button" class="btn btn-dark btn-block" value="create-movie" id="create-movie">Create movie</button>
+             <label for="choose-movie">Movie</label>
+             <select id="choose-movie" class="add-movie">
+                 <option>-</option>
+             </select>
 
-
-        </form>
-
-        <div>
-            <p >All movies length: <span id='all-movie-length'></span></p>
-
-        </div>
-
-        <ul id="movie-list">
-        </ul>
-
-        <div>
-            <h3>Program</h3>
-
-            <form action="" method="POST">
-                <div class="form-group">
-                    <label for="date">Date</label>
-
-                    <input type="date" name="movie-date" class="form-control" id="date" required="required">
-                </div>
-
-                <button type="button" class="btn btn-warning btn-block" id="create-program">Create program</button>
-                <br>
-                <div class="form-group">
-                    <label for="program-list">Movie</label>
-
-                    <select class="form-control" id ='movie-select'>
-                        <option value=''>-</option>
-                    </select>
-                    <ul id="program-list">
-                    </ul>
-                </div>
-                <div class="form-group">
-                    <label for="fin-program">Program</label>
-                    <br>
-                    <select class="form-control" id='fin-program'>
-                        <option value='' id=>-</option>
-                    </select>
-                </div>
-
-                <button class="btn btn-warning btn-block" type="button" id="addmovietop">Add movie to program</button>
-
-            </form>
+            <label for="choose-program"></label>
+             <select id="choose-program" class="add-movie">
+                 <option>-</option>
+             </select>
+             <input type="button" id="add-movie-button" value="Add movie to program" onclick="addMovie()">
 
 
+         </fieldset>
 
-        </div>
-    </div>
+    </form>
+
+
     <script src="./app.js/entities.js"></script>
     <script src="./app.js/form.js"></script>
 </body>
