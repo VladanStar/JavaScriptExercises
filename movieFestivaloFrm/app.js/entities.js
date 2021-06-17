@@ -21,7 +21,48 @@ const programInfo = document.querySelector("#program-info");
 const programList = [];
 const unsortedMoviesList = [];
 
+function Movie(title, duration, genre) {
+    this.title = title;
+    this.duration = duration;
+    this.genre = genre;
+}
 
+Movie.prototype.getData = function () {
+    const genreID1 = this.genre.slice(0, 1);
+    const genreID2 = this.genre.slice(this.genre.length - 1);
+    const genreID = (genreID1 + genreID2).toUpperCase();
+
+    const output = `${this.title}, ${this.duration}min, ${genreID}`;
+    return output;
+}
+
+function Program(date) {
+    this.date = new Date(date);
+    this.movieList = [];
+}
+
+Program.prototype.addMovie = function (movie) {
+    this.movieList.push(movie);
+}
+
+Program.prototype.moviesDuration = function () {
+    let moviesDuration = 0;
+    this.movieList.forEach(function (movie) {
+        moviesDuration += parseInt(movie.duration);
+    })
+    return moviesDuration;
+}
+
+
+Program.prototype.getInfo = function () {
+    let output = "";
+    if (this.movieList.length === 0) {
+        output = `${this.date}, program duration: TBA`;
+    } else {
+        output = `${this.date}, ${this.movieList.length} movies, ${this.moviesDuration()}`
+    }
+    return output;
+}
 
 function createMovie() {
 
