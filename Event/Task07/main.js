@@ -2,9 +2,10 @@ function onOuterClick() {
   outer.classList.add("selected");
   console.log("Outer clicked");
 }
-function onInnerClick() {
+function onInnerClick(event) {
   inner.classList.add("selected");
   console.log("Inner clicked");
+  event.stopPropagation();
 }
 function onResetClick() {
   inner.classList.remove("selected");
