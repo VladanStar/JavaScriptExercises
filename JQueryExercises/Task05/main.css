@@ -1,0 +1,25 @@
+form {
+    border: 1px solid #eee;
+    width: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 10px;
+}
+sup {
+    color: orange;
+    font-size: 10px;
+}
+span {
+    font-size: 10px;
+}
+span.greska {
+    color: red;
+}
+div {
+    display: none;
+    margin-top: 10px;
+    margin-left: 40px;
+    border:1px dotted orange;
+    width: 80%;
+    padding: 5px;
+}
