@@ -1,0 +1,20 @@
+{
+   "marines":[
+       {
+        "id":"100",
+        "name": "Vladan",
+        "surname": "Cupric",
+        "bool1": null
+       },{
+        "id":"101",
+        "name": "aleksandar",
+        "surname": "Pljakic",
+        "bool1": null
+       },{
+        "id":"102",
+        "name": "Milos",
+        "surname": "Markovic",
+        "bool1": null
+       }
+   ]
+}
