@@ -5,7 +5,9 @@ h1 {
   margin: 15px 0px; }
 
 .row {
-  padding: 15px 30px 15px 30px; }
+  padding: 15px 30px 15px 30px;
+color:palegoldenrod;
+}
 
 img {
   width: 100%;
