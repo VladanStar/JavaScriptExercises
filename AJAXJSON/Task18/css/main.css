@@ -3,7 +3,7 @@ body{
 
 }
 .ajax-container {
-    width: 50px;
+    width: 500px;
     margin: 50px auto;
 }
 #btnAjaxCall {
