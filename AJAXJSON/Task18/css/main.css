@@ -1,0 +1,29 @@
+body{
+    font-family: sans-serif;
+
+}
+.ajax-container {
+    width: 50px;
+    margin: 50px auto;
+}
+#btnAjaxCall {
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #3498db;
+    outline: none;
+    font-size: 22px;
+    opacity: 0.7;
+    padding: 10px;
+}
+#btnAjaxCall:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.item-details{
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 6px;
+}
