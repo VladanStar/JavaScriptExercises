@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>..:: BitShow ::..</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="col-8 offset-2">
+
+        <div class="row blue">
+            <div class="col-10 offset-1 full">
+                <p class="header white"><a href="index.html">BitShow</a></p>
+                <input class="search" type="text" name="" placeholder="search">
+                <div class="searchedShowsDiv">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10 offset-1">
+                <div class="row">
+                    <h2 class="center">Popular Shows</h2>
+                </div>
+                <div class="row">
+                    <div id="popularShows" class="col-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row blue">
+            <!-- <div class="col-10 offset-1 full"> -->
+                <p class="center footer white">© 2018 Copyright: Ljubomir</p>
+            <!-- </div> -->
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="js/data.js"></script>
+        <script src="js/searchData.js"></script>
+        <script src="js/ui.js"></script>
+    <script src="js/controller.js"></script>
+    <script>$(ctrlModule.init());</script>
+</body>
+
+</html>
