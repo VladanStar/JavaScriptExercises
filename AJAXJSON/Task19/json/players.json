@@ -1,0 +1,273 @@
+[
+    {
+        "id":"1",
+        "name":"Alen Smith",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Liverpool",
+        "position":"striker",
+        "country":"England",
+        "age": "29"
+    },
+    {
+        "id":"2",
+        "name":"Cikao",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Boavista",
+        "position":"winger forward",
+        "country":"Brazil",
+        "age": "29"
+    },
+    {
+        "id":"3",
+        "name":"Aleksandar Pljakic",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"forward",
+        "country":"Serbia",
+        "age": "29"
+    },
+    {
+        "id":"4",
+        "name":"Boris Krstic",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"striker",
+        "country":"Serbia",
+        "age": "22"
+    },
+    {
+        "id":"5",
+        "name":"Rajmuund",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Boavista",
+        "position":"striker",
+        "country":"Brazil",
+        "age": "29"
+    },
+    {
+        "id":"6",
+        "name":"Friaca",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"striker",
+        "country":"Brazil",
+        "age": "29"
+    },
+    {
+        "id":"7",
+        "name":"Aleksandar Jevtic",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"striker",
+        "country":"Serbia",
+        "age": "29"
+    },
+    {
+        "id":"8",
+        "name":"Lupano",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Liverpool",
+        "position":"midfield",
+        "country":"France",
+        "age": "29"
+    },
+    {
+        "id":"9",
+        "name":"Jonathan Vooda",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Liverpool",
+        "position":"midfield",
+        "country":"England",
+        "age": "29"
+    },
+    {
+        "id":"10",
+        "name":"Aleksandar Rosevic",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Boavista",
+        "position":"left defender",
+        "country":"Serbia",
+        "age": "29"
+    },
+    {
+        "id":"11",
+        "name":"Goran Popovic",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"goalkeeper",
+        "country":"Serbia",
+        "age": "29"
+    },
+    {
+        "id":"12",
+        "name":"Aleksandar Soskacevic",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"goalkeeper",
+        "country":"Serbia",
+        "age": "29"
+    },
+    {
+        "id":"13",
+        "name":"Paulo Jorge Kadete",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Boavista",
+        "position":"right defender",
+        "country":"France/Portugalia",
+        "age": "29"
+    },
+    {
+        "id":"14",
+        "name":"Pakult",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"midfield",
+        "country":"Germany",
+        "age": "29"
+    },
+    {
+        "id":"15",
+        "name":"Lasio",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Boavista",
+        "position":"atacking midfield",
+        "country":"France",
+        "age": "29"
+    },
+    {
+        "id":"16",
+        "name":"Robert Stopira",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Boavista",
+        "position":"midfield",
+        "country":"France",
+        "age": "29"
+    },
+    {
+        "id":"17",
+        "name":"Predrag Milosevic",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"second striker",
+        "country":"Serbia",
+        "age": "29"
+    },
+    {
+        "id":"18",
+        "name":"Rozerio",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Liverpool",
+        "position":"left defender",
+        "country":"Brazil/France",
+        "age": "29"
+    },
+    {
+        "id":"19",
+        "name":"Jirgen Fajfenberg",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Liverpool",
+        "position":"right back",
+        "country":"Germany",
+        "age": "29"
+    },
+    {
+        "id":"20",
+        "name":"Fransoa Alfan",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Liverpool",
+        "position":"goalkeeper",
+        "country":"France",
+        "age": "29"
+    },
+    {
+        "id":"21",
+        "name":"Robert Magabe",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Boavista",
+        "position":"goalkeeper",
+        "country":"England/Coast Ivory",
+        "age": "29"
+    },
+    {
+        "id":"22",
+        "name":"Igor Djosevski",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"striker",
+        "country":"Serbia",
+        "age": "29"
+    },
+    {
+        "id":"23",
+        "name":"Miroslav Pejcin",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Liverpool",
+        "position":"striker",
+        "country":"Serbia",
+        "age": "29"
+    },
+    {
+        "id":"24",
+        "name":"Darko Pivaljevic",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Liverpool",
+        "position":"midfield",
+        "country":"Serbia",
+        "age": "29"
+    },
+    {
+        "id":"25",
+        "name":"Milorad Petrika",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"defender",
+        "country":"Serbia",
+        "age": "29"
+    },
+    {
+        "id":"26",
+        "name":"Adam Desaiver",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Liverpool",
+        "position":"central defender",
+        "country":"France",
+        "age": "29"
+    },
+    {
+        "id":"27",
+        "name":"Leon Koen",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAgG0tz647XtWLLYHICRhq8ZFlj42_Cecauik1YuQYb6egTjJD6N80ti5GsMnGX_Bn-gY&usqp=CAU",
+        "club":"Liverpool",
+        "position":"central defender",
+        "country":"England",
+        "age": "29"
+    },
+    {
+        "id":"28",
+        "name":"Rinas Bakirchoglu",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Bayern",
+        "position":"atacking midfield",
+        "country":"Russia",
+        "age": "29"
+    },
+    {
+        "id":"29",
+        "name":"Nelzinjo",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Liverpool",
+        "position":"midefield",
+        "country":"Brazil",
+        "age": "29"
+    },
+    {
+        "id":"30",
+        "name":"Alen Salihamidzic",
+        "image":"https://appspowerplaymanager.vshcdn.net/images/ppm/player_faces/face_ns.png",
+        "club":"Juventus",
+        "position":"central midefield",
+        "country":"Serbia/Bosnia",
+        "age": "29"
+    }
+
+]
