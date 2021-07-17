@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid headerWrapp">
+        <nav class="navbar navbar-light header">
+            <div class="container center">
+                <a class="navbar-brand text-white title">Rick and Morty</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container text-center">
+        <nav aria-label="Page navigation example" class="page">
+            <ul class="pagination">
+                <li class="page-item previous">
+                    <a class="page-link" href="#">
+                        &lt;</a> </li>
+                <li class="page-item but1"><a class="page-link" href="#">0</a> </li>
+                <li class="page-item but2"><a class="page-link actBtn" href="#">1</a> </li>
+                <li class="page-item but3"><a class="page-link" href="#">2</a> </li>
+                <li class="page-item next"><a class="page-link" href="#">&gt;</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="loading"></div>
+        <div class="row main"></div>
+    </div>
+
+    <div class='footer-container'>
+        <div class="container-fluid wrapper_footer">
+            <div class="footer navbar navbar-light">
+                <div class="row">
+                    <div class="col-12 offset-0">
+                        <h5 class="text-center text-white footer_title">Copyright&copy; Vladan Cupric 2021</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="module">
+        import { homePage } from "./js/controller.js";
+        homePage();
+    </script>
+</body>
+
+</html>
