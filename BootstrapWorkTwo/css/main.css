@@ -1,0 +1,28 @@
+:root{
+    --violet:rgb(109, 65, 190);
+    --gray: #fff;
+    --yellow: #fadb61;
+    --lightGray: #eee;
+    --white: #fff;
+    --orangeRed: #ec4e20;
+    --orange: #ff9505;
+}
+* {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bolder;
+}
+/* **************
+NAVBAR
+*************** */
+.bg-lig {
+    background-color: var(--violet) !important;
+}
+
+.navbar-light .navbar-brand {
+    color:var(--orangeRed) !important;
+}
+.navbar-light .navbar-brand:hover {
+    color:var(--yellow) !important;
+}
