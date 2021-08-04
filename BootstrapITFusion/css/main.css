@@ -7,6 +7,9 @@
   --lightGray: #eee;
   --white: #fff;
 }
+.py-5 {
+    padding: 120px 0px !important;
+}
 
 * {
   margin: 0px;
@@ -61,5 +64,84 @@ jumbotron HEADER
     background-position: center;
     background-size: cover;
     border-radius: 0 !important;
-    padding: 20px;
+    padding: 200px;
+    margin-bottom: 0px;
+}
+
+.btn-warn {
+    background: var(--orange) !important;
+    border: var(--orangeRed) !important;
+}
+.btn-warn:hover {
+    background: var(--orangeRed) !important;
+    border: var(--orange) !important;
+}
+h2::after {
+    content: "";
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    height: 5px;
+    background-color: var(--orange);
+
+}
+h2 {
+    font-weight: 700px !important;
+    margin: 50px !important;
+}
+#about {
+    margin-bottom: 120px !important;
+}
+/* ********
+Numbers
+******** */
+#numbers {
+    background: var(--gray) !important;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+#numbers i {
+    color:var(--orange);
+    font-size: 3rem;
+    margin-bottom: 30px !important;
+}
+#numbers h3 {
+color:var(--lightGray) !important;
+font-size: 2.2rem;
+}
+#numbers h4 {
+color:  var(--orange) !important;
+font-size: 1.2rem;
+}
+/* ********
+Portfolio
+******** */
+#portfolio .card {
+ position: relative;
+ margin-bottom: 2em;
+}
+#portfolio .card-text {
+    padding: 30px;
+}
+#portfolio .corner-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--orange);
+    color: var(--white);
+}
+.corner-text p {
+    margin-bottom: 0;
+    padding: 10px;
+    font-weight: 700;
+}
+#portfolio img {
+    transition: transform .3s ease-in-out;
+}
+#portfolio .holder {
+    overflow: hidden;
+}
+#portfolio img:hover {
+  transform:scale(1.3)
 }
