@@ -8,7 +8,7 @@
   --white: #fff;
 }
 .py-5 {
-    padding: 120px 0px !important;
+  padding: 120px 0px !important;
 }
 
 * {
@@ -44,159 +44,172 @@ navbar
   padding-left: 30px;
 }
 .navbar .navbar-nav .nav-link:hover {
-color: var(--orange) !important;
-transition: .4 ease;
+  color: var(--orange) !important;
+  transition: 0.4 ease;
 }
 .active {
-    color: var(--orangeRed);
+  color: var(--orangeRed);
 }
 .navbar-toggler {
-    background-color: var(--orange) !important;
+  background-color: var(--orange) !important;
 }
 /* ********
 jumbotron HEADER
 ******** */
 .btn {
-    background: goldenrod !important;
+  background: goldenrod !important;
 }
 .header {
-    background-image:url("/BootstrapITFusion/img/header.jpg"), linear-gradient(0,0,0,.3), rgba(0,0,0,.3) !important;
-    background-position: center;
-    background-size: cover;
-    border-radius: 0 !important;
-    padding: 200px;
-    margin-bottom: 0px;
+  background-image: url("/BootstrapITFusion/img/header.jpg"),
+    linear-gradient(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) !important;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 !important;
+  padding: 200px;
+  margin-bottom: 0px;
 }
 
 .btn-warn {
-    background: var(--orange) !important;
-    border: var(--orangeRed) !important;
+  background: var(--orange) !important;
+  border: var(--orangeRed) !important;
 }
 .btn-warn:hover {
-    background: var(--orangeRed) !important;
-    border: var(--orange) !important;
+  background: var(--orangeRed) !important;
+  border: var(--orange) !important;
 }
 h2::after {
-    content: "";
-    display: block;
-    margin: 30px auto;
-    width: 100px;
-    height: 5px;
-    background-color: var(--orange);
-
+  content: "";
+  display: block;
+  margin: 30px auto;
+  width: 100px;
+  height: 5px;
+  background-color: var(--orange);
 }
 h2 {
-    font-weight: 700px !important;
-    margin: 50px !important;
+  font-weight: 700px !important;
+  margin: 50px !important;
 }
 #about {
-    margin-bottom: 120px !important;
+  margin-bottom: 120px !important;
 }
 /* ********
 Numbers
 ******** */
 #numbers {
-    background: var(--gray) !important;
-    color: white;
-    text-align: center;
-    padding: 60px 0;
+  background: var(--gray) !important;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
 }
 #numbers i {
-    color:var(--orange);
-    font-size: 3rem;
-    margin-bottom: 30px !important;
+  color: var(--orange);
+  font-size: 3rem;
+  margin-bottom: 30px !important;
 }
 #numbers h3 {
-color:var(--lightGray) !important;
-font-size: 2.2rem;
+  color: var(--lightGray) !important;
+  font-size: 2.2rem;
 }
 #numbers h4 {
-color:  var(--orange) !important;
-font-size: 1.2rem;
+  color: var(--orange) !important;
+  font-size: 1.2rem;
 }
 /* ********
 Portfolio
 ******** */
 #portfolio .card {
- position: relative;
- margin-bottom: 2em;
+  position: relative;
+  margin-bottom: 2em;
 }
 #portfolio .card-text {
-    padding: 30px;
+  padding: 30px;
 }
 #portfolio .corner-text {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--orange);
-    color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--orange);
+  color: var(--white);
 }
 .corner-text p {
-    margin-bottom: 0;
-    padding: 10px;
-    font-weight: 700;
+  margin-bottom: 0;
+  padding: 10px;
+  font-weight: 700;
 }
 #portfolio img {
-    transition: transform .3s ease-in-out;
- 
+  transition: transform 0.3s ease-in-out;
 }
 #portfolio .holder {
-    overflow: hidden;
+  overflow: hidden;
 }
 #portfolio img:hover {
-  transform:scale(1.3)
+  transform: scale(1.3);
 }
 /* ********
 Projects
 ******** */
 #projects {
-    background: var(--lightGray);
+  background: var(--lightGray);
 }
 #projects img {
-    width: 1200px !important;
-    height: 500px !important;
+  width: 1200px !important;
+  height: 500px !important;
 }
 #team {
-    text-align: center;
+  text-align: center;
 }
 #team img {
-    border-radius: 50%;
-    margin-bottom: 40px;
+  border-radius: 50%;
+  margin-bottom: 40px;
 }
 /* ********
 Footer
 ******** */
 
 footer {
-    background: var(--orange);
+  background: var(--orange);
 }
 footer a {
-    color: var(--gray);
-    font-size: 2.5em;
-    margin: 10px;
+  color: var(--gray);
+  font-size: 2.5em;
+  margin: 10px;
 }
 footer a:hover {
-    color: white;
-    transition-duration: 0.7s;
+  color: white;
+  transition-duration: 0.7s;
 }
 
 footer i:hover {
-    animation: footer 0.7s ease;
+  animation: footer 0.7s ease;
 }
 footer h3 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 @keyframes footer {
-    100% {
-        transform: rotate(360deg);
-    }
-    
+  100% {
+    transform: rotate(360deg);
+  }
 }
 footer h2::after {
-    content: "";
-    display: block;
-    margin: 30px auto;
-    width: 100px;
-    height: 5px;
-    background: var(--gray);
+  content: "";
+  display: block;
+  margin: 30px auto;
+  width: 100px;
+  height: 5px;
+  background: var(--gray);
+}
+/************************
+R E S P O N S I V E
+************************/
+@media (max-width: 768px) {
+  .header {
+    padding: 150px 20px;
+  }
+  .header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 3rem !important;
+  }
 }
