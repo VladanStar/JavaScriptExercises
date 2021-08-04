@@ -138,10 +138,21 @@ Portfolio
 }
 #portfolio img {
     transition: transform .3s ease-in-out;
+ 
 }
 #portfolio .holder {
     overflow: hidden;
 }
 #portfolio img:hover {
   transform:scale(1.3)
+}
+/* ********
+Projects
+******** */
+#projects {
+    background: var(--lightGray);
+}
+#projects img {
+    width: 1200px !important;
+    height: 500px !important;
 }
