@@ -156,3 +156,47 @@ Projects
     width: 1200px !important;
     height: 500px !important;
 }
+#team {
+    text-align: center;
+}
+#team img {
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+/* ********
+Footer
+******** */
+
+footer {
+    background: var(--orange);
+}
+footer a {
+    color: var(--gray);
+    font-size: 2.5em;
+    margin: 10px;
+}
+footer a:hover {
+    color: white;
+    transition-duration: 0.7s;
+}
+
+footer i:hover {
+    animation: footer 0.7s ease;
+}
+footer h3 {
+    margin-top: 30px;
+}
+@keyframes footer {
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+footer h2::after {
+    content: "";
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    height: 5px;
+    background: var(--gray);
+}
