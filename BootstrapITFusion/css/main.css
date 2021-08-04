@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+:root {
+  --orangeRed: #ec4e20;
+  --orange: #ff9505;
+  --blue: #016fb9;
+  --gray: #353531; /* rgb(53, 53, 49) */
+  --lightGray: #eee;
+  --white: #fff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif !important;
+  font-size: 16px !important;
+  color: var(--gray);
+}
+/* ********
+navbar
+******** */
+.navbar {
+  background-color: rgba(53, 53, 49, 0.8) !important;
+}
+.navbar-brand {
+  color: var(--orange) !important;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.navbar-brand:hover {
+  color: var(--orangeRed) !important;
+  transition: 0.4s ease;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--white) !important;
+  text-transform: uppercase;
+  padding-left: 30px;
+}
+.navbar .navbar-nav .nav-link:hover {
+color: var(--orange) !important;
+transition: .4 ease;
+}
+.active {
+    color: var(--orangeRed);
+}
+.navbar-toggler {
+    background-color: var(--orange) !important;
+}
+/* ********
+jumbotron HEADER
+******** */
+.btn {
+    background: goldenrod !important;
+}
+.header {
+    background-image:url("/BootstrapITFusion/img/header.jpg"), linear-gradient(0,0,0,.3), rgba(0,0,0,.3) !important;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 !important;
+    padding: 20px;
+}
