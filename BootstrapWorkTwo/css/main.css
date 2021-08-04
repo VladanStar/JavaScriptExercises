@@ -1,5 +1,5 @@
 :root{
-    --violet:rgb(109, 65, 190);
+    --violet:rgb(136, 90, 221);
     --gray: #fff;
     --yellow: #fadb61;
     --lightGray: #eee;
@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6 {
 NAVBAR
 *************** */
 .bg-lig {
-    background-color: var(--violet) !important;
+    background-color:var(--violet)!important;
 }
 
 .navbar-light .navbar-brand {
@@ -25,4 +25,13 @@ NAVBAR
 }
 .navbar-light .navbar-brand:hover {
     color:var(--yellow) !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--orange) !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--orangeRed) !important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--yellow) !important;
 }
