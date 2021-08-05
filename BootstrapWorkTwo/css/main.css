@@ -47,3 +47,44 @@ NAVBAR
     text-align: center;
     top:30%;
 }
+/* **************
+SLIDER
+*************** */
+.btn-outline-primary {
+    border-color: var(--yellow) !important;
+    color: var(--yellow) !important;
+}
+.btn-outline-primary:hover {
+    background: var(--yellow) !important;
+    border-color: var(--yellow) !important;
+    color: var(--orangeRed) !important;
+}
+.carousel-caption{
+    top: 30% !important;
+}
+.underline {
+    height: 9px;
+    margin: 20px auto;
+    width: 20%;
+    background: var(--yellow) !important;
+}
+.about .lead {
+    font-style: italic;
+}
+.about img {
+    border-radius: 40px !important;
+}
+.heading {
+    color:var(--violet) !important;
+    font-size: 3rem !important;
+}
+.works {
+    padding: 50px 0px;
+    background: lightgray;
+}
+.works .col-md-3 {
+    padding: 10px;
+}
+.works img {
+    border-radius: 30px;
+}
