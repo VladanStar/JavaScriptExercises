@@ -38,8 +38,10 @@ const Slides = () => {
 
   return (
     <ul className=" Slides__list">
-      {slidesData.map((item) => (
-        <Post name={item.title} text={item.description} />
+      {slidesData.map((item, index) => (
+      
+        <Post name={item.title} text={item.description} key={index} />
+        
       ))}
     </ul>
   );
