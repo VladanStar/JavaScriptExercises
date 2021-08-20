@@ -1,8 +1,8 @@
 import React from 'react';
-import './UsersGrid.css';
+import './UserCard.css';
 import PropTypes from 'prop-types';
 
-const UsersGrid = (props) => {
+const UserCard = (props) => {
     return (
         <div className='UserCard__wrapper'>
             <img className='UserCard__img' src={props.img} alt='Users'></img>
@@ -15,16 +15,16 @@ const UsersGrid = (props) => {
     )
 }
 
-UsersGrid.propTypes = {
+UserCard.propTypes = {
     name: PropTypes.string,
     email: PropTypes.string,
     dob: PropTypes.string
 }
 
-UsersGrid.defaultProps = {
-    name: 'Vladan',
+UserCard.defaultProps = {
+    name: 'Uros',
     email: 'gmail.com',
-    dob: '11.03.1973.'
+    dob: '23.04.1994.'
 }
 
-export { UsersGrid };
+export { UserCard };
