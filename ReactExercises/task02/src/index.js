@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.js';
 import 'popper.js/dist/popper.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import "../node_modules/font-awesome/css/font-awesome.min.css";
+
 
 
 ReactDOM.render(
