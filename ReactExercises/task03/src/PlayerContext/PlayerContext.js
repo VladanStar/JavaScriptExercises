@@ -63,7 +63,7 @@ export const PlayerProvider = (props) => {
     },
   ]);
   return (
-    <PlayerContext.Provider value={"hello"}>
+    <PlayerContext.Provider value={[players,setPlayers]}>
        {props.children} 
     </PlayerContext.Provider>
   );

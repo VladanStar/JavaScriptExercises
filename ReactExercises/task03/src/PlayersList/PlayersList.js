@@ -1,16 +1,19 @@
 import React, { useState, useContext } from "react";
-import Player from "../Player/Player";
+import Player from "../Player/Player"
 import { PlayerContext } from "../PlayerContext/PlayerContext";
 
 const PlayersList = () => {
-  const value = useContext(PlayerContext);
+const [players, setPlayaers] =useContext(PlayerContext)
 
   return (
     <div>
-      <h1>{value}</h1>
-      {/* {players.map(player=>(
-               <Player  name={player.name} godine ={player.godine} pozicija = {player.pozicija}/>
-            ))} */}
+      {players.map(player => (
+        <Player
+          name={player.name}
+          godine={player.godine}
+          pozicija={player.pozicija}
+        />
+      ))}
     </div>
   );
 };

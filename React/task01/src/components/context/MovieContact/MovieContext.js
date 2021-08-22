@@ -1,4 +1,4 @@
-import { PROPERTY_TYPES } from "@babel/types";
+
 import React, {useState, createContext }  from "react";
 import MovieList from "../../MovieList/MovieLIst";
 import Nav from "../../Nav/Nav";
