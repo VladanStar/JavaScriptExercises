@@ -27,5 +27,5 @@ Promise.all([o1, o2, o3]).then(rezultati=> {
     console.log("Igra pocinje")
 },
 greska => {
-    console.log("Doslo je do neke grekse")
+    console.log("Doslo je do neke grekse. Izvestaj", greska)
 })
