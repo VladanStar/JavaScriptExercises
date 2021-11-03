@@ -1,0 +1,56 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <title>Location</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light header">
+        <a class="navbar-brand" href="index.html">Rick and Morty</a>
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="index.html">Characters</a></li>
+            <li class="page-item"><a class="page-link" href="episode.html">Episodes</a></li>
+        </ul>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item previous">
+                    <a class="page-link" href="#">
+                        <</a>
+                </li>
+                <li class="page-item next"><a class="page-link" href="#">></a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="container wrapper">
+        <div class="row location">
+
+        </div>
+        <div class="row main button-center">
+            <li class="page-item previous" id="residents"><a class="page-link" href="#">click for all residents</a></li>
+        </div>
+    </div>
+    <nav class="navbar navbar-light bg-light footer">
+        <div class="container">
+            <div class="text-center foot">
+                <a class="navbar-brand" href="https://github.com/VladanStar" target="_blank"><img class="logo" src="./images/logo.png" alt=""> Vladan Cupric</a>
+            </div>
+        </div>
+    </nav>
+    <script type="module">
+        import {locationPage} from './js/controller.js'; locationPage();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+</body>
+
+</html>

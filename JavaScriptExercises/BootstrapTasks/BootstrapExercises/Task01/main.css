@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --orange:#FF9505;
+    --gray:#353531;
+    --white:#fff;
+    --orangeRed:#EC4E20;
+
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--gray);
+}
+/******    
+stilizujemo navbar   
+******/
+.navbar {
+    background: rgba(53,53,53,0.9) !important;
+}
+.navbar-brand {
+    color: var(--orange) !important;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.navbar-brand:hover {
+    color: var(--orangeRed) !important;
+    transition: .4s ease;
+}

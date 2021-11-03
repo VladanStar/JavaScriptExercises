@@ -1,0 +1,16 @@
+thead{
+    background-color: greenyellow;
+   
+}
+table, th, td {
+    border: 1px solid green;
+}
+th{
+    width: 200px;
+}
+td:nth-child(2){
+    background-color: honeydew;
+}
+td:nth-child(odd){
+    background-color: khaki;
+}

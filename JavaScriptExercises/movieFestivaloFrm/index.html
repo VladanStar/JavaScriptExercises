@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Movie Festival</h1>
+    <form>
+        <fieldset class="cf">
+            <legend>Movie</legend>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Title">
+            <label for="length">Length(min)</label>
+            <input type="number" id="duration" name="duration" placeholder="Length in min">
+            <select name="genre" id="genre">
+                <option value="">-</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horror</option>
+            </select>
+            <div class="validation-output first"></div>
+            <input type="button" id="button-movie" value="Create movie">
+            <ul id="movie-list"></ul>
+            <div id="total-length"></div>
+         </fieldset>
+
+         <fieldset>
+             <legend>Program</legend>
+             <label for="date">Date:</label>
+             <input type="date" id="date">
+             <div class="validation-output second"></div>
+             <input type="button" id="button-program" value="Create Program">
+             <ul id="program-info"></ul>
+
+             <hr>
+
+             <label for="choose-movie">Movie</label>
+             <select id="choose-movie" class="add-movie">
+                 <option>-</option>
+             </select>
+
+            <label for="choose-program"></label>
+             <select id="choose-program" class="add-movie">
+                 <option>-</option>
+             </select>
+             <input type="button" id="add-movie-button" value="Add movie to program" onclick="addMovie()">
+
+
+         </fieldset>
+
+    </form>
+
+
+    <script src="./app.js/entities.js"></script>
+    <script src="./app.js/form.js"></script>
+</body>
+
+</html>

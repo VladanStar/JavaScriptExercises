@@ -1,0 +1,28 @@
+#kategorije {
+width: 200px;
+}
+#kategirije, #kategorije ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+#kategorije li {
+    cursor: pointer;
+    background: #C60;
+    border-bottom: 3px double #FFF;
+    font-size: 15px;
+}
+#kategorije li a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+#kategorije li >ul >li {
+    cursor: auto;
+    border-bottom: 1x solid #c60;
+    padding: 0 14px;
+    background-color: #3a1d00;
+}
+#kategorije li >ul >li>a:hover {
+    text-decoration: underline;
+}

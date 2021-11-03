@@ -1,0 +1,21 @@
+{
+  "ime": "Vladan",
+  "prezime": "Cupric",
+  "indeks": 96511,
+  "godina upisa": 2007,
+  "ocene": [
+    {
+      "predmet": "Osnovi programiranja",
+      "ocena": 10
+    },
+    {
+      "predmet": "Objektno orijentisano programiranje",
+      "ocena": 9
+    },
+    {
+      "predmet": "Baze podataka",
+      "ocena": 10
+    }
+  ],
+  "diplomirao":true
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>AJAX && JSON</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="demo">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+    <script>
+        function loadDoc(){
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function(){
+                document.getElementById("demo").innerHTML = 
+                this.responseText;
+            }
+            xhttp.open("GET","ajax_info.txt",true);
+            xhttp.send();
+        }
+    </script>
+    
+</body>
+</html>

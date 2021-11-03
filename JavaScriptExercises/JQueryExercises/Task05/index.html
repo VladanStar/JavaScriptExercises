@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Validacija i ocitavanje forme</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="" method="GET">
+
+        korisnicko ime: <sup>*</sup>: <input type="text" name="username"/><span></span>
+        <br><br>
+        e-mail<sup>*</sup>:<input type="password" name="sifra1">
+        <br><br>
+        Ponovite sifru <sup>*</sup>: <input type="password" name="sifra2">
+        <br><br>
+        Prijavite se za vesti: <input type="checkbox" name="prijava" value="p"/>
+        <div>
+            <br><br>
+            oblast: <select name="oblast">
+                <option value="--"> -- Odaberite oblast</option>
+                <option value="ar"> arhitektura racunara </option>
+                <option value="oop"> objektno orijentisano programiranje</option>
+                <option value="web">web tehnologije</option>
+            </select>
+            <br><br>
+            dnevne: <input type="radio" name="vesti" value="d">
+            <br>
+            nedeljne: <input type="radio" name="vesti" value="n" checked="checked">
+            <br>
+            mesecne: <input type="radio" name="vesti" value="m">
+        </div>
+        <br><br>
+        <p id="izvestaj"></p>
+        <input type="submit"  value="posalji podatke">
+        <input type="reset" value="reset">
+        <span style="float:right;">polja obelezana sa<sup>*</sup>su obavezna</span>
+    </form>
+  
+</body>
+</html>

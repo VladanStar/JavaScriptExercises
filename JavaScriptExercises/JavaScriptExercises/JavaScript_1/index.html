@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JavaScript 01</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <p id="ovaj">Prvi paragraf.</p>
+    <p>Drugi paragraf.</p>
+    <button onclick="promeniParagraf();">
+        Promeni
+    </button>
+
+    <script>
+        function promeniParagraf(){
+        let paragraf = document.querySelector('#ovaj');
+        paragraf.innerText = "Neki novi tekst";
+        paragraf.style.color = "#DC0202";
+        if(paragraf.style.fontSize != '30pt'){
+        paragraf.style.fontSize = "30pt";
+        }
+        else {
+            paragraf.style.fontSize = '10pt';
+        }
+        }
+    </script>
+    
+</body>
+</html>
