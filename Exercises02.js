@@ -198,3 +198,21 @@ var petternClass = (function () {
     }
     
 })();
+//--------------26. --------------
+console.log(true== 1)
+//------------ 27.------------
+var i =3;
+function chaange(j) {
+    j=4;
+    
+}
+chaange(i);
+console.log(i);
+// -----------------28. ----------------
+const customer = {
+    id:'123',
+    phone:'1-98-98765'
+};
+customer._proto_zipcode = '98765';
+const {zipCode} = customer;
+console.log(customer)
