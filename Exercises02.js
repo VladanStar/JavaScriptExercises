@@ -86,5 +86,12 @@ console.log(f(2,1));
 //------------- 12. ----------
 console.log(console.log('JS'));
 //------------- 13. ------------
-
+function transform(a,b,f) {
+    var result;
+    result = f(a) + f(b);
+    console.log(result);
+}
+transform(2,4,function (x) {return x+1;
+    
+});
 
