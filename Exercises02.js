@@ -117,3 +117,84 @@ function add(a,b) {
 }
 result = add();
 console.log(result);
+//---------------- 17. ------------
+var a = 12;
+var b=3;
+var result;
+function add(a,b) {
+    return a+b;
+}
+result = add(2,11);
+console.log(result);
+//---------- 18. --------------
+function transform(a,b,f) {
+    var result;
+    result = f(a) + f(b);
+    console.log(result);
+}
+function double(x) {
+    return 2*x;
+}
+transform(2,4,double);
+//------------- 19. --------------
+transform (2,4, square);
+function transform(a,b,f) {
+    var result;
+    result = f(a) + f(b);
+    console.log(result);
+}
+var square = function (x) {
+    return x*x;
+}
+//-------------- 20. --------------
+(function (a,b ,condition) {
+    if(condition (a,b)){
+        console.log(a)
+    } else {
+        console.log(b);
+    }  
+})(2,6, function (x,y) {
+    return x>y;
+})
+//------------------- 21. -----------
+var a = 20;
+function f(n) {
+    var result = a+n;
+    var a = 30;
+    return result;   
+}
+console.log(f(5));
+//------------------- 22. -----------
+var a = 20;
+function f(n) {
+    var result = a+n;
+    a = 30;
+    return result;   
+}
+console.log(f(5));
+//------------- 23. --------------
+function solve(weight0, weight1, weoght2) {
+    
+    return 0;
+}
+//------------- 24. -----------
+console.log(typeof arguments) 
+//object
+//-------------25, -----------
+var petternClass = (function () {
+    var instance;
+    function createInstance() {
+        var object = new Object("This is instance");
+        return object;
+        
+    }
+    return {
+        getInstance: function (){
+            if(!instance){
+                instance  = createInstance();
+            }
+            return instance;
+        }
+    }
+    
+})();
