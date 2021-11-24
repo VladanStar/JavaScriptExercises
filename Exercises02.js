@@ -94,4 +94,26 @@ function transform(a,b,f) {
 transform(2,4,function (x) {return x+1;
     
 });
-
+//-------------- 14.--------------
+var result;
+function add(a,b) {
+    return a+b;
+}
+result = add(2);
+console.log(add);
+//------------- 15. -------------
+var result;
+function add(a,b) {
+    return a+b;
+}
+result = add(2);
+console.log(result);
+//---------------- 16. ------------
+var a = 12;
+var b=3;
+var result;
+function add(a,b) {
+    return a+b;
+}
+result = add();
+console.log(result);
