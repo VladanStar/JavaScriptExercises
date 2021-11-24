@@ -63,4 +63,28 @@ function calculate(a,b) {
 }
 calculate(123,45);
 console.log(a,b);
+//------------ 9.-------------
+var a = [3,4,1,2];
+function addOne(array) {
+    for(var i=0;i<array.length; i++){
+        array[i] +=1;
+    }
+}
+addOne(a);
+console.log(a);
+// ------------- 10. -------
+function f(a,b) {
+    var result = a+b;
+}
+console.log(f(2,1));
+//---------- 11.----------
+function f(a,b) {
+    var result =a+b;
+    
+}
+console.log(f(2,1));
+//------------- 12. ----------
+console.log(console.log('JS'));
+//------------- 13. ------------
+
 
