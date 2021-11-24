@@ -215,4 +215,77 @@ const customer = {
 };
 customer._proto_zipcode = '98765';
 const {zipCode} = customer;
-console.log(customer)
+console.log(customer);
+//--------------------29. --------------
+function a(i,j) {
+    if(i==1 || j==1 || (i+j)==1){
+        return true
+    }
+    else {
+        return false;
+    }
+} 
+console.log(a(1,5));
+console.log(a(2,3));
+
+console.log(a(-3,4));
+//-----------------30. --------------
+console.log(sum(2,3));
+function  sum(x,y) {
+    return x+y +1;
+    
+}
+//-----------------31.-----------
+console.log(mul(2,3));
+var mul = function (x,y) {
+    return x*y;
+    
+}
+//------------- 32. -----------
+var a = 10;
+function f(a,b) {
+    a++;
+    b--;
+    
+}
+f(a,2);
+console.log(a);
+//-------------- 33.-------------
+function f() {
+return function (a,b) {
+    return a+b;
+    
+}    }
+var result = f();
+console.log(result);
+//-------------- 34.-------------
+function f() {
+    return function (a,b) {
+        return a+b;
+        
+    }    }
+    var result = f()(1,3);
+    console.log(result);
+    //-------------35.-----------
+    function outer(x) {
+        function inner(y) {
+            return y+1
+            
+        }
+        return x+ inner(x);
+        
+    }
+    var result = outer(5)
+    console.log(result);
+    //--------------- 36. ---------------
+    (function () {
+        console.log('spring time')
+        
+    })();
+    //---------37.-----------
+    (function (s) {
+        console.log(s);
+        
+    })('JS');
+    //------------ 38.------------
+    
