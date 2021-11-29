@@ -1,0 +1,11 @@
+<input class="url" id="url1" type="url" value="youtube url">
+<input onclick="changevideo()" class="add-video" id="add-video1" type="submit" value="add to playlist">
+
+<iframe class="video" id="video1" ></iframe>
+
+<script>
+    function changevideo() {
+        var ddd = document.getElementById('url').value;
+        document.getElementById('video1').setAttribute('src', ddd);
+    }
+</script>
