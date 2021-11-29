@@ -1,11 +1,18 @@
-<input class="url" id="url1" type="url" value="youtube url">
-<input onclick="changevideo()" class="add-video" id="add-video1" type="submit" value="add to playlist">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <input class="url" id="url1" type="url" value="youtube url">
+    <input onclick="changevideo()" class="add-video" id="add-video1" type="submit" value="add to playlist">
+    <iframe class="video" id="video1"></iframe>
 
-<iframe class="video" id="video1" ></iframe>
-
-<script>
-    function changevideo() {
-        var ddd = document.getElementById('url').value;
-        document.getElementById('video1').setAttribute('src', ddd);
-    }
-</script>
+    
+</body>
+</html>
