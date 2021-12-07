@@ -33,4 +33,11 @@ var newFunc = a();// izvrsava funkciju a()
 newFunc();// izvrsava vracenu funkciju
 a()(); //izvrsava obe funkcije
 
-console.log(parseInt('1e1'))
+console.log(parseInt('1e1'));
+var outher = function (param) {
+  var inner = function (theinput) {
+    return theinput * 2;
+  };
+  return "The result is: " + inner(param)
+};
+console.log(outher(2));
