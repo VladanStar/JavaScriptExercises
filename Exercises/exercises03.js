@@ -29,4 +29,8 @@ function a() {
     console.log("B!");
   }
 }
+var newFunc = a();// izvrsava funkciju a()
+newFunc();// izvrsava vracenu funkciju
 a()(); //izvrsava obe funkcije
+
+console.log(parseInt('1e1'))
