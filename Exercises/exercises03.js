@@ -21,3 +21,12 @@ function f() {
 }
 f();
 console.log(f());
+
+function a() {
+  console.log("A!");
+  return function ()
+  {
+    console.log("B!");
+  }
+}
+a()(); //izvrsava obe funkcije
