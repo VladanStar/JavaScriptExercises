@@ -41,3 +41,4 @@ var outher = function (param) {
   return "The result is: " + inner(param)
 };
 console.log(outher(2));
+

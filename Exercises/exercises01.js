@@ -17,3 +17,4 @@ fetchSomeData.then(fetchedData => {
 }).catch(err => {
     console.error('catch:', err);
 })
+
