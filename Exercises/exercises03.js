@@ -47,3 +47,9 @@ var obj1= {}
 obj1.name= "Alice";
 obj1["surname"] = "Cooper";
 console.log(obj1)
+
+var array =[3,6,9,12,15];
+var filterNew = array.filter(v=>v%3===0);
+console.log(filterNew);
+var sumNew = array.reduce((total, amount)=> total+amount);
+console.log(sumNew)

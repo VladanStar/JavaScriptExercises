@@ -1,18 +1,5 @@
-p {
-color: red;
-}
-@media (max-width:400px){
-    p {
-        color: blue;
-    }
-}
-@media(min-width:800px){
-    p {
-        color: green;
-    }
-}
-@media (min-width:200px) and (max-width:600px){
-    p{
-        color: black;
-    }
+div {
+    border: 1px solid black;
+    background: blanchedalmond;
+    height: 200px;
 }
