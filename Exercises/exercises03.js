@@ -42,3 +42,8 @@ var outher = function (param) {
 };
 console.log(outher(2));
 
+
+var obj1= {} 
+obj1.name= "Alice";
+obj1["surname"] = "Cooper";
+console.log(obj1)
