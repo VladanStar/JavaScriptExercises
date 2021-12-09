@@ -5,4 +5,7 @@
     margin: 20px;
     color: red;
     background: royalblue;
+    box-sizing: content-box;
+    /* box-sizing: border-box; */
+    /* podrazumevani je content-box */
 }
