@@ -1,0 +1,13 @@
+#first {
+ border: 1px solid black;
+}
+.second {
+border-color:red;
+}
+div {
+    width: 300px;
+    height: 100px;
+}
+img {
+width: 100%;
+}
