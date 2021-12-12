@@ -2,7 +2,7 @@ span.text {
   color: red;
 }
 .text span {
-  color: blue;
+  color:blue;
 }
 div {
   color: green;
@@ -13,3 +13,4 @@ div span {
 p span {
   color: yellow;
 }
+/* blue */
