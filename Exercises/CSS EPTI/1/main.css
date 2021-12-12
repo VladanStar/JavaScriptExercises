@@ -1,7 +1,10 @@
-.box {
-    width: 400px;
-    padding: 10px;
-    border: 1px;
-    margin: 20px;
-    background: red;
+body{
+    font-size: 24pt;
+
+}
+p {
+    font-size: 50%;
+}
+span {
+    font-size: 1.5em;
 }

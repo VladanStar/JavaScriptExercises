@@ -1,0 +1,4 @@
+table tr:first-child{
+  font-size: 25px;
+  background: rebeccapurple;
+}
