@@ -1,0 +1,15 @@
+span.text {
+  color: red;
+}
+.text span {
+  color: blue;
+}
+div {
+  color: green;
+}
+div span {
+  color: black;
+}
+p span {
+  color: yellow;
+}
