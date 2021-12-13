@@ -1,11 +1,17 @@
 const searchStringElement = document.querySelector(".searchString");
 const dgmPretragaElement = document.querySelector(".dgmPretraga");
 const prikazElement = document.querySelector(".prikaz");
+const prikazOdabranih = document.querySelector('.prikazOdabranih');
 
 let film = [];
+let odabraniFilmovi = [];
+
 const setFilm = (list) => {
   film = [...list];
 };
+const setOdabraniFilmovi = (list)=> {
+    odabraniFilmovi=[...list];
+}
 
 dgmPretragaElement.addEventListener("click", () => {
   fetch(
@@ -23,7 +29,9 @@ dgmPretragaElement.addEventListener("click", () => {
 
 const render = () => {
     prikazElement.innerHTML = '';
-  film.forEach((element) => {
+
+
+  film.forEach((element, idx) => {
     prikazElement.innerHTML += `
             
             
@@ -34,10 +42,15 @@ const render = () => {
             <div class="card-body">
                 <h5 class="card-title">${element.Title}</h5>
                 <p class="card-text">Tip: ${element.Type} Godina: ${element.Year}</p>
-                <a href="#" class="btn btn-primary">Dodaj u korpu</a>
+                <a href="#" class="btn btn-primary" onClick = "dodaj(${idx})">Dodaj u korpu</a>
             </div>
             </div>
             </div>
             `;
   });
 };
+
+const dodaj = (idx) =>{
+    setOdabraniFilmovi([...odabraniFilmovi, film[idx]]);
+    console.log(odabraniFilmovi);
+}
