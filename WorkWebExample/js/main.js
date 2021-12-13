@@ -2,9 +2,14 @@ const searchStringElement = document.querySelector(".searchString");
 const dgmPretragaElement = document.querySelector(".dgmPretraga");
 const prikazElement = document.querySelector(".prikaz");
 const prikazOdabranihElement = document.querySelector('.prikazOdabranih');
+const levoElement = document.querySelector('.levo');
+const desnoElement = document.querySelector(".desno");
+const stranaElement = document.querySelector('.strana')
 
 let film = [];
 let odabraniFilmovi = [];
+let strana =1;
+
 
 const setFilm = (list) => {
   film = [...list];
@@ -12,21 +17,30 @@ const setFilm = (list) => {
 const setOdabraniFilmovi = (list)=> {
     odabraniFilmovi=[...list];
 }
+const setStrana=(br)=>{
+    strana = br;
+}
 
 dgmPretragaElement.addEventListener("click", () => {
-  fetch(
-    `https://www.omdbapi.com/?apikey=a68ef358&s=${searchStringElement.value}`
-  )
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data.Search);
-      //   film = data.Search;
-      setFilm(data.Search);
-      render();
-     
-    })
-    .catch((error) => console.log(error));
+  dohvati();
 });
+
+const dohvati = ()=>{
+    stranaElement.value = strana;
+    fetch(
+        `https://www.omdbapi.com/?apikey=a68ef358&s=${searchStringElement.value}&page={strana}`
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data.Search);
+          //   film = data.Search;
+          setFilm(data.Search);
+          render();
+         
+        })
+        .catch((error) => console.log(error));
+
+}
 
 const render = () => {
     prikazElement.innerHTML = '';
@@ -89,3 +103,15 @@ const renderOdabrani = () => {
   });
 };
 
+levoElement.addEventListener("click",()=>{
+    strana <=1 ? setStrana(1) : setStrana(strana-1);
+    setFilm([]);
+    dohvati();
+    render();
+});
+desnoElement.addEventListener("click",()=>{
+    setStrana(strana+1);
+    setFilm([]);
+    dohvati();
+    render();
+})
