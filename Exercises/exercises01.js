@@ -18,3 +18,16 @@ fetchSomeData.then(fetchedData => {
     console.error('catch:', err);
 })
 
+console.log(typeof arguments);
+
+
+console.log(true==1);
+
+
+var i=3;
+function change(j) {
+    j=4;
+    
+}
+change(i);
+console.log(i);
