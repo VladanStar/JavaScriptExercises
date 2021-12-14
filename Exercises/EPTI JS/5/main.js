@@ -5,3 +5,4 @@ a.push('data');
 console.log(b);
 console.log(c)
 // b= [ 'apple', 'banana', 'cocount', 'data' ]
+//[ 'apple', 'banana', 'cocount' ]
