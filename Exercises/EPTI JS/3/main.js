@@ -29,3 +29,10 @@ console.log(person);
 console.log(typeof person);
 //true
 //------------------------------
+/* 
+which of the following techniques can be used to increase performance of JavaScript code
+
+Reduce DOM access
+Reduce activity in loops
+Reduce DOM size
+*/
