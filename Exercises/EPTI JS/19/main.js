@@ -7,7 +7,7 @@ var Person = function(firstName, lastName, dateOfBirth, masa){
 person = new Person ('Jim',"Perice",new Date(2013,2,12), {weight:'70kg'});
 personClone = JSON.parse(JSON.stringify(person));
 
-//console.log(person === personClone); false
+console.log(person === personClone); false
 
 //console.log(person.firstName === personClone.firstName)
 //true
