@@ -16,5 +16,5 @@ personClone = JSON.parse(JSON.stringify(person));
 //console.log(person.masa['weight']===personClone['weight'])
 //false
 
-// console.log(person.dateOfBirth.toDateString() === personClone.dateOfBirth.toDateString())
+//console.log(person.dateOfBirth.toDateString() === personClone.dateOfBirth.toDateString())
 //error
