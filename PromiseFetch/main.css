@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#app {
+    display: flex;
+
+}
+#left,
+#right {
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 1px solid cadetblue;
+}
+#title {
+    border-bottom: 2px solid black;
+    margin: 10px 0px;
+}
+#content {
+    margin: 10px 0px;
+}
