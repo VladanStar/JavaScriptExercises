@@ -29,7 +29,7 @@ function a() {
     console.log("B!");
   }
 }
-var newFunc = a();// izvrsava funkciju a()
+var newFunc = a(); // izvrsava funkciju a()
 newFunc();// izvrsava vracenu funkciju
 a()(); //izvrsava obe funkcije
 
@@ -53,3 +53,14 @@ var filterNew = array.filter(v=>v%3===0);
 console.log(filterNew);
 var sumNew = array.reduce((total, amount)=> total+amount);
 console.log(sumNew)
+
+function Hero(name){
+  this.name = name;
+}
+var h = Hero('Vladan');
+console.log(name);
+console.log(window.name)
+
+
+var a = 1;
+console.log(this.a);
