@@ -1,0 +1,27 @@
+html {
+    font-size: 16px;
+}
+body{
+    font-size: 14px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    font-size: 12px;
+    display: flex;
+}
+.first {
+    width: 10em;
+}
+.second {
+    font-size: 10px;
+    width: 10em;
+}
+.third {
+    font-size: 10px;
+    width: 50%;
+}
+.forth {
+    font-size: 15px;
+    width: 10vw;
+}
