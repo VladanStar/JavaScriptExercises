@@ -12,10 +12,27 @@ body {
     flex-basis: 0;
     border: 1px solid cadetblue;
 }
+#right {
+    margin-left: 10px;
+}
 #title {
     border-bottom: 2px solid black;
     margin: 10px 0px;
 }
 #content {
     margin: 10px 0px;
+}
+.vest {
+    display: flex;
+    margin: 5px 0px;
+    border: 1px solid darkgray;
+    padding-bottom: 5px;
+}
+.vest >img {
+    width: 93px;
+    height: auto;
+}
+.vest >span {
+    flex-grow: 1;
+    padding: 20px;
 }
