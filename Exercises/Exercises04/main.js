@@ -79,3 +79,40 @@ function ucitavanjeTop10(){
         }
     })
 }
+
+function evidentirajProdaju(){
+    let datumProdaje = document.getElementById("datum_prodaje").value;
+    let nazivArtikla = document.getElementById('naziv_artikla').value;
+    let cenaArtikla = document.getElementById('cena_artikla').value;
+    let prodataKolicina = document.getElementById('prodata_kolicina').value;
+
+    let form = new FormData();
+    form.append('key','e5ad1ee36f0d002a7aada935c62937d866dcad8764841b4ad4fa65dc624caef4')
+    form.append('action','storeSale');
+    form.append('sale_date',datumProdaje);
+    form.append('article)name', nazivArtikla);
+    form.append('article_price', cenaArtikla);
+    form.append('quantity',prodataKolicina)
+    fetch(
+        'http://zadatak.singidunum.ac.rs/predmeti/osnove-html-css-js/fake-api.php',
+        {
+            method:'POST',
+            body:form,
+        }
+    )
+    .then(res=>res.json())
+    .then(res=>{
+        let app = document.getElementById('app');
+    app.innerHTML='';
+        if(res.type !=='success'){
+            console.log("Doslo je do neke greske" + res.code);
+            return;
+        }
+        else{
+          
+           app.innerHTML= res.data;
+           
+        }
+    })
+
+}

@@ -14,7 +14,20 @@
     </div>
     <button type="button" onclick="ucitavanjeStatistike()">Ucitavanje Statistike</button></body><br>
     <button type="button" onclick="ucitavanjeTop10()">Ucitavanje Top 10</button>
-    
+    <div>
+        Datum prodaje<br>
+        <input type="date" id="datum_prodaje"><br>
+        Ime artikla<br>
+        <input type="text" id="naziv_artikla"><br>
+        Cena<br>
+        <input type="number" min="0.01" step="0.01" value='0.00'id="cena_artikla"><br>
+        Kolicina<br>
+        <input type="number" min="0.01" step="0.01" value="1" id="prodata_kolicina"><br>
+        <button type="button" onclick="evidentirajProdaju()">
+        Evidentiraj prodaju</button>
+
+
+    </div>
     <script src='main.js'></script>
 </body>
 </html>
