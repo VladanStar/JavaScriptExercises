@@ -135,3 +135,49 @@ console.log(sum(1,2,'3'));
 //33undefined
 
 //-----------13.--------
+let a ='a';
+const b= 'd';
+try{
+  a='b';
+  b='c';
+  var c= 'd'
+}
+catch {
+  a='c';
+  let b= 'd'
+}
+finally {
+  a='f';
+  var d='g'
+}
+console.log(a,'b',c,d)
+// f b undefined g
+
+//--------14.------------
+const then = async()=>3;
+then().then(x=>console.log(x));
+//3
+
+//---------15.---------------
+const arr = [1,4,9];
+const sqrtSum = arr.forEach(Math.sqrt).reduce((a,b)=>a+b,0)
+//TypeError: Cannot read property 'reduce' of undefined
+ 
+//--------------16.--------
+const func= (x,y)=>{
+  console.log(Date.now()=x**y);
+}
+
+
+//----------17.--------------
+Promise.resolve(3)
+.then(()=>{
+  throw new Error();
+})
+.then(()=>Promise.resolve(4))
+.catch(()=>Promise.reject(5))
+.then(x=>console.log(x))
+.catch(err=>console.log(err));
+//5
+
+//----------18.------------
