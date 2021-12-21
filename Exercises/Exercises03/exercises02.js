@@ -1,3 +1,4 @@
+const { resolve } = require("path/posix");
 const { async } = require("regenerator-runtime");
 
 //--------1 . -------------
@@ -235,3 +236,53 @@ const person = {
 const secondPerson = {...person};
 secondPerson.address.number=7;
 console.log(person.address.number, secondPerson.address.number);
+//7 7
+
+//----------24.------------
+let a= 0;
+let b= 0;
+var c;
+function count(a){
+  a++;
+  c=a 
+  if (b){
+    let c =0;
+    c++;
+  }
+  b +=c;
+}
+count(a);
+count(1);
+count(2);
+console.log(a,b,c);
+//0 6 3
+
+//-----------25.-----------
+const arr =[];
+arr.x=3
+console.log(arr);
+
+//--------------26.--------
+
+const getItemData= ()=>({
+name:"Desk"
+});
+console.log(getItemData().name);
+//Desk
+
+//--------------26.--------
+const later = (func)=>{
+  return new Promise((resolve,reject)=>{
+    if(later){
+      resolve(func(4));
+    }
+    else{
+      reject(new Error("Later is not defined"));
+    }
+  })
+}
+later(x=>Promise.resolve(12 +x))
+.then(console.log)
+.catch(console.log);
+//16
+
