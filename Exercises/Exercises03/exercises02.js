@@ -181,3 +181,57 @@ Promise.resolve(3)
 //5
 
 //----------18.------------
+const arr = [1,4,0];
+const sqrtSum = arr.forEach(Math.sqrt).reduce((a,b)=>a+b,0)
+//TypeError: Cannot read property 'reduce' of undefined
+
+//-----------19.----------------
+console.log(typeof('x' instanceof Function))
+//boolean
+
+//-----------20.----------
+const func=(x,y)=>{
+  console.log(Date.now()-x**y);
+}
+
+//----------21.------------
+Promise.resolve(3)
+.then(()=>{
+  throw new Error();
+})
+.then(()=>Promise.resolve(4))
+.catch(()=>Promise.reject(5))
+.then(x=>console.log(x))
+.catch(err=>console.log(err))
+//5
+
+//----------22.------------
+const a='0';
+const b=2.02362;
+const c='5.82';
+const d ='false';
+const e=true;
+const f=null;
+const g=NaN;
+//
+console.log(b.toFixed(2))// true
+console.log(parseInt(c,10))// true
+console.log(f=='null')
+console.log(g==parseFloat("true"))
+console.log(!!a===false);
+console.log(`${e}`===true)
+console.log(Boolean(d)===false)
+
+//----------23.------------
+const person = {
+  name:"Ljubica",
+  age:26,
+  address: {
+    city:"Pripyat",
+    street:"Vulutsaya Zhdanova",
+    number:5
+  }
+};
+const secondPerson = {...person};
+secondPerson.address.number=7;
+console.log(person.address.number, secondPerson.address.number);
