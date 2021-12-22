@@ -286,3 +286,7 @@ later(x=>Promise.resolve(12 +x))
 .catch(console.log);
 //16
 
+var a = [1,2,3];
+var b =a;
+console.log(a===b);
+// true plitko kopiranje
