@@ -106,11 +106,11 @@ console.log(data.arr, data[mappedArr]);
 const basicData = {id:"333-222"};
 const relatedId="wow";
 
-let data={};
-data[basicData] =basicData;
-data[relatedId]=relatedId;
-console.log(data);
-//{ '[object Object]': { id: '333-222' }, wow: 'wow' }
+// let data={};
+// data[basicData] =basicData;
+// data[relatedId]=relatedId;
+// console.log(data);
+// //{ '[object Object]': { id: '333-222' }, wow: 'wow' }
 
 //------------11.----------
 const data = {a:3,b:4};
@@ -290,3 +290,9 @@ var a = [1,2,3];
 var b =a;
 console.log(a===b);
 // true plitko kopiranje
+
+console.log(document);
+
+
+console.log("0"==true)
+console.log(0 == "true")
