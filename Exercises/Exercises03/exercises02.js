@@ -296,3 +296,4 @@ console.log(document);
 
 console.log("0"==true)
 console.log(0 == "true")
+console.log(undefined==null);
