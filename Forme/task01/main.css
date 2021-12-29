@@ -13,3 +13,10 @@
 .dropdown_menu:hover .sadrzaj{
   display: block;
 }
+.button {
+    background-color: cadetblue;
+    color: white;
+    padding: 12px;
+    border:none;
+    font-size: 12px;
+}
