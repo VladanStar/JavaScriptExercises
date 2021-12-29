@@ -1,0 +1,15 @@
+.dropdown_menu {
+    position: relative;
+    display: inline-block;
+}
+.sadrzaj {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    padding: 12px 10px;
+    border-radius: 5%;
+    border: 1px solid thin;
+}
+.dropdown_menu:hover .sadrzaj{
+  display: block;
+}
