@@ -65,15 +65,5 @@ console.log(window.name)
 var a = 1;
 console.log(this.a);
 
-<<<<<<< HEAD
 NaN = 42;
 console.log(NaN)
-=======
-//
-var userAge = "Please enter your age";
-if (userAge = 0){   console.log("So you're a baby!'")} 
-else if ( userAge < 0 | userAge > 200) { 
- console.log("I think you may be lying about your age")}
-else{   
-  console.log("That's a good age");}
->>>>>>> 311bc3b3559469593102def9939aa58d04e07e02
