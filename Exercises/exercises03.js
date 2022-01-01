@@ -64,3 +64,6 @@ console.log(window.name)
 
 var a = 1;
 console.log(this.a);
+
+NaN = 42;
+console.log(NaN)
