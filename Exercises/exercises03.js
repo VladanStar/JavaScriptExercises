@@ -64,3 +64,11 @@ console.log(window.name)
 
 var a = 1;
 console.log(this.a);
+
+//
+var userAge = "Please enter your age";
+if (userAge = 0){   console.log("So you're a baby!'")} 
+else if ( userAge < 0 | userAge > 200) { 
+ console.log("I think you may be lying about your age")}
+else{   
+  console.log("That's a good age");}
