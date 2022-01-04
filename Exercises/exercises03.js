@@ -122,3 +122,53 @@ console.log(true ? "prvi" : "drugi");
 
 // operator uslovnog izraza
 console.log(false ? 1 : "drugi");
+
+let buka = function() {
+  console.log(" Tras !");
+};
+
+buka();
+buka();
+// broj argumenata moze biti veci
+// od broja parametara funkcije
+buka("Petar");
+
+const stepen = function(osnova, izlozilac) {
+  let ret = 1;
+  for (let i = 0; i < izlozilac; i++)
+      ret *= osnova;
+  return ret;
+};
+
+console.log(stepen(3, 4));
+console.log(stepen(4, 3));
+console.log(stepen(4));
+console.log(stepen());
+
+let stepen = function (osnova, izlozilac) {
+  if (osnova == undefined)
+      osnova = 10;
+  if (izlozilac == undefined)
+      izlozilac = 2;
+  let ret = 1;
+  for (let i = 0; i < izlozilac; i++)
+      ret *= osnova;
+  return ret;
+};
+
+console.log(stepen(3, 4));
+console.log(stepen(4, 3));
+console.log(stepen(4));
+console.log(stepen());
+
+const stepen = function (osnova = 10, izlozilac = 2) {
+  let ret = 1;
+  for (let i = 0; i < izlozilac; i++)
+      ret *= osnova;
+  return ret;
+};
+
+console.log(stepen(3, 4));
+console.log(stepen(4, 3));
+console.log(stepen(4));
+console.log(stepen());
