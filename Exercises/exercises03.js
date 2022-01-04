@@ -246,3 +246,10 @@ const izbroj2 = uvecaj();
 console.log(izbroj2());
 console.log(izbroj2());
 console.log(izbroj2());
+
+let mojeIme = 'Dragoljub';
+const pozdrav = (ime) =>
+    () => console.log('Zdravo, ' + ime + '!');
+
+let pozdravSaImenom = pozdrav(mojeIme);
+mojeIme = 'Marko';
