@@ -172,3 +172,12 @@ console.log(stepen(3, 4));
 console.log(stepen(4, 3));
 console.log(stepen(4));
 console.log(stepen());
+
+let test = "globalna vrednost";
+function testirajOpsegDefinisanosti() {
+  test = "lokalna vrednost";
+  console.log(test);
+}
+console.log(test);
+testirajOpsegDefinisanosti();
+console.log(test);
