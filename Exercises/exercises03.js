@@ -181,3 +181,12 @@ function testirajOpsegDefinisanosti() {
 console.log(test);
 testirajOpsegDefinisanosti();
 console.log(test);
+
+function kokoska() {
+  return jaje();
+};
+
+function jaje() {
+  return kokoska();
+}
+console.log("Starija je ", kokoska());
