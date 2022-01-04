@@ -190,3 +190,35 @@ function jaje() {
   return kokoska();
 }
 console.log("Starija je ", kokoska());
+
+function paran(broj) {
+  if (broj == 0)
+      return true;
+  if(broj == 1)
+      return false;
+  return neparan(broj - 1);
+}
+
+function neparan(broj) {
+  if (broj == 0)
+      return false;
+  if (broj == 1)
+      return true;
+  return paran(broj-1);
+}
+
+console.log(paran(6));
+console.log(neparan(50));
+console.log(paran(75));
+console.log(neparan(75));
+
+function omotajVrednost(n) {
+  let lokalnaPromenljiva = n;
+  return () => lokalnaPromenljiva;
+}
+
+let omotacZa1 = omotajVrednost(1);
+let omotacZa2 = omotajVrednost(2);
+
+console.log(omotacZa1());
+console.log(omotacZa2());
