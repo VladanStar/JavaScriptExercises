@@ -253,3 +253,6 @@ const pozdrav = (ime) =>
 
 let pozdravSaImenom = pozdrav(mojeIme);
 mojeIme = 'Marko';
+
+console.log(x);
+let x = 5;
