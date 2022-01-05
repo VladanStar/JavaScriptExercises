@@ -320,3 +320,35 @@ console.log((47 / 0) - (500 / 0));
 
 // dobijanje specijalne vrednosti NaN
 console.log((47 / 0) / (500 / 0));
+
+/* automatska konveryija tipova pri izvršenju aritmetičkih operacija */
+console.log(8 * null);
+// prikazaće 0
+
+console.log("5" - 1);
+// prikazaće 4
+
+console.log("5" + 1);
+// prikazaće 51
+
+console.log("pet" * 2);
+// prikazaće NaN
+
+/* automatska konverzija tipova pri izvršenju operacija poređenja */
+console.log(false == 0);
+// prikazaće true
+
+/* poređenje jednakosti za vrednosti null i/ili undefined se
+   realizuje na pomalo specifičan način  */
+console.log(null == undefined);
+// prikazaće true
+
+console.log(null == 0);
+// prikazaće false
+
+/* logički operatori se "skraćeno" izvršavaju */
+console.log(undefined || "Karlo");
+// prikazaće Karlo
+
+console.log("Karlo" || "Korisnik");
+// prikazaće Karlo
