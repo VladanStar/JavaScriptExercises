@@ -280,3 +280,7 @@ function test(){
 }
 
 test();  
+
+
+NaN = 42;
+console.log(NaN)
