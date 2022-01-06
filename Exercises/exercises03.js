@@ -390,3 +390,15 @@ triArgumentaPodrazumenvano(1, 2, "tri");
 triArgumentaPodrazumenvano(1, 2);
 triArgumentaPodrazumenvano(1);
 triArgumentaPodrazumenvano();
+
+let test = "globalna vrednost";
+function testirajOpsegDefinisanosti() {
+  test = "lokalna vrednost";
+  console.log(test);
+}
+console.log(test);
+testirajOpsegDefinisanosti();
+console.log(test);
+//globalna vrednost
+//lokalna vrednost
+//lokalna vrednost
