@@ -279,7 +279,6 @@ function test(){
   console.log("prikaz iz deklarisane funkcije");
 }
 
-<<<<<<< HEAD
 test(); 
 
 // prvo se diže cela funkcija
@@ -302,7 +301,6 @@ var b =a;
 console.log(a==b)
 console.log(a===b)
 
-=======
 test();  
 
 
@@ -601,4 +599,3 @@ plaviZec.delo = "Плави зец";
 plaviZec.uzrecica = "Плав";
 plaviZec.uzrecica = "Плави, зец, чудни зец, једини на свету.";
 plaviZec.predstaviSe();
->>>>>>> a2948a444a6dbe9567685a14ecd73ca25605af85
