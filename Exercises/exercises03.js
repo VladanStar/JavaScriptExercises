@@ -279,6 +279,7 @@ function test(){
   console.log("prikaz iz deklarisane funkcije");
 }
 
+<<<<<<< HEAD
 test(); 
 
 // prvo se diže cela funkcija
@@ -301,3 +302,303 @@ var b =a;
 console.log(a==b)
 console.log(a===b)
 
+=======
+test();  
+
+
+NaN = 42;
+console.log(NaN)
+
+// operatori i operandi
+console.log(100 + 4 * 11);
+
+// zagrade utiču na prioritet
+console.log((100 + 4) * 11);
+
+// operatori istog prioriteta se izvršavaju sdesna ulevo
+console.log(1 - 2 + 1);
+
+// operator za računanje ostatka pri deljenju
+console.log(314 % 100);
+
+// specijalna vrednost +beskonačno
+console.log(Infinity);
+
+// dobijanje specijalne vrednosti +beskonačno
+console.log(47 / 0);
+
+// specijalna vrednost -beskonačno
+console.log(-Infinity);
+
+// dobijanje specijalne vrednosti -beskonačno
+console.log((47 - 50) / (500 - 500));
+
+// specijalna vrednost NaN
+console.log(NaN);
+
+// dobijanje specijalne vrednosti NaN
+console.log((47 / 47 - 1) / (500 - 500));
+
+// dobijanje specijalne vrednosti NaN
+console.log((47 / 0) - (500 / 0));
+
+// dobijanje specijalne vrednosti NaN
+console.log((47 / 0) / (500 / 0));
+
+/* automatska konveryija tipova pri izvršenju aritmetičkih operacija */
+console.log(8 * null);
+// prikazaće 0
+
+console.log("5" - 1);
+// prikazaće 4
+
+console.log("5" + 1);
+// prikazaće 51
+
+console.log("pet" * 2);
+// prikazaće NaN
+
+/* automatska konverzija tipova pri izvršenju operacija poređenja */
+console.log(false == 0);
+// prikazaće true
+
+/* poređenje jednakosti za vrednosti null i/ili undefined se
+   realizuje na pomalo specifičan način  */
+console.log(null == undefined);
+// prikazaće true
+
+console.log(null == 0);
+// prikazaće false
+
+/* logički operatori se "skraćeno" izvršavaju */
+console.log(undefined || "Karlo");
+// prikazaće Karlo
+
+console.log("Karlo" || "Korisnik");
+// prikazaće Karlo
+
+// pozivaju se funkcije Math.random i console.log
+let x = 6 * Math.random()-3
+console.log(x);
+x = 6 * Math.random()-3
+console.log(x);
+x = 6 * Math.random()-3
+console.log(x);
+x = 6 * Math.random()-3
+console.log(x);
+
+function bezArgumenata() {}
+
+// Ovo je OK
+bezArgumenata(1, 2, 3);
+
+function triArgumenta(a, b, c) {
+  console.log("---\n" + a);
+  console.log(b);
+  console.log(c);
+}
+
+// I ovo je OK
+triArgumenta(1, 2, "tri");
+triArgumenta(1, 2);
+triArgumenta(1);
+triArgumenta();
+
+function triArgumentaPodrazumenvano(a = "a", b = "b", c = null) {
+  console.log("---\n" + a);
+  console.log(b);
+  console.log(c);
+}
+
+triArgumentaPodrazumenvano(1, 2, "tri");
+triArgumentaPodrazumenvano(1, 2);
+triArgumentaPodrazumenvano(1);
+triArgumentaPodrazumenvano();
+
+let test = "globalna vrednost";
+function testirajOpsegDefinisanosti() {
+  test = "lokalna vrednost";
+  console.log(test);
+}
+console.log(test);
+testirajOpsegDefinisanosti();
+console.log(test);
+//globalna vrednost
+//lokalna vrednost
+//lokalna vrednost
+
+function uvecajBrojac() {
+  let brojac = 0;
+  return function () {
+    return brojac++;
+  };
+}
+
+const izbroj = uvecajBrojac();
+
+console.log(izbroj());
+console.log(izbroj());
+console.log(izbroj());
+
+let uvecaj = () => {
+  let brojac = 0;
+  return () => brojac++;
+};
+
+const izbroj2 = uvecaj();
+
+console.log(izbroj2());
+console.log(izbroj2());
+console.log(izbroj2());
+
+console.log(x);
+let x = 5;
+
+console.log(x);
+var x = 5;
+
+console.log(x);
+x = 5;
+
+console.log("buducnost vraće:", buducnost());
+
+function buducnost() {
+    return "Još uvek ne postoje leteći automobili";
+};
+
+let  object1 = {
+    value: 10
+};
+
+let object2 = object1;
+
+let object3 = {
+    value: 10
+};
+
+console.log(object1 == object2);
+// Prikazuje true
+
+console.log(object1 == object3);
+// Prikazuje false
+
+object1.value = 15;
+console.log(object2.value);
+// Prikazuje 15
+
+object2.value = 17;
+console.log(object1.value);
+// Prikazuje 17
+
+console.log(object3.value);
+// Prikazuje 10
+
+let obj = {
+  ime: "Miki",
+  length: 4,
+};
+
+console.log(obj.length);
+console.log(obj.ime);
+
+console.log(obj.duzina);
+
+console.log(obj["ime"]);
+console.log(obj[String.fromCharCode(105) + "me"]);
+
+console.log(null.length);
+console.log(null.duzina);
+console.log(undefined.length);
+console.log(undefined.duzina);
+
+let nizBrojeva = [2, 3, 5, 7, 11];
+
+console.log(nizBrojeva[1]);
+console.log(nizBrojeva[1 - 1]);
+
+console.log(nizBrojeva[17 - 1]);
+console.log(nizBrojeva[-1]);
+
+let niz = [1, 3, "Mika", "pera", false];
+
+console.log("---");
+for (let i = 0; i < niz.length; i++) console.log(niz[i]);
+
+console.log("---");
+for (let i in niz) console.log(niz[i]);
+
+console.log("---");
+for (let x of niz) console.log(x);
+
+var podsetnik = [];
+
+function podsetiMe(zadatak) {
+  podsetnik.push(zadatak);
+}
+
+function staJeSledece() {
+  return podsetnik.shift();
+}
+
+function hitnoMePodseti(zadatak) {
+  podsetnik.unshift(zadatak);
+}
+
+podsetiMe("priprema slajdova za predavanja");
+podsetiMe("priprema zadataka");
+hitnoMePodseti("odgovoriti na pisma");
+podsetiMe("kupovina knjige");
+
+while (podsetnik.length != 0) {
+  console.log(staJeSledece());
+}
+
+let zecPrototip = {
+    tip: "непознат",
+
+    boja: "непознатa",
+
+    predstaviSe: function () {
+        console.log("Зец: " + this.tip + " боја: " + this.boja + "." + "'\n");
+    },
+
+    govori: function (tekst) {
+        console.log("Овај зец " + this.tip + " боје " + this.boja
+            + " каже '" + tekst + "'" + "\n");
+    }
+};
+
+let zec = Object.create(zecPrototip);
+zec.predstaviSe();
+zec.govori("Ко сам ја?");
+
+let zecIzFikcijePrototip = Object.create(zecPrototip);
+
+zecIzFikcijePrototip.tip = "непознат";
+zecIzFikcijePrototip.boja = "непозната";
+
+zecIzFikcijePrototip.predstaviSe = function () {
+    console.log("Зец: " + this.tip + ", боја: " + this.boja + ", име: " + this.ime + "\n"
+        + "креатор: " + this.kreator.ime + " " + this.kreator.prezime + "\n"
+        + "дело: " + this.delo + "\n"
+        + "узречица: '" + this.uzrecica + "'\n");
+}
+
+let duskoDugousko = Object.create(zecIzFikcijePrototip);
+duskoDugousko.tip = "паметан";
+duskoDugousko.boja = "сива";
+duskoDugousko.ime = "Душко Дугоушко";
+duskoDugousko.kreator = { "ime": "Tex", "prezime": "Avery" };
+duskoDugousko.delo = "A Wild Hare";
+duskoDugousko.uzrecica = "Шефе, који ти је враг?";
+duskoDugousko.predstaviSe();
+let plaviZec = Object.create(zecIzFikcijePrototip);
+plaviZec.tip = "веома паметан";
+plaviZec.boja = "плава";
+plaviZec.ime =  "Плави зец";
+plaviZec.kreator = { "ime": "Душко", "prezime": "Радовић" };
+plaviZec.delo = "Плави зец";
+plaviZec.uzrecica = "Плав";
+plaviZec.uzrecica = "Плави, зец, чудни зец, једини на свету.";
+plaviZec.predstaviSe();
+>>>>>>> a2948a444a6dbe9567685a14ecd73ca25605af85
