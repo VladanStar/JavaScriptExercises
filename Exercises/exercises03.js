@@ -279,4 +279,25 @@ function test(){
   console.log("prikaz iz deklarisane funkcije");
 }
 
-test();  
+test(); 
+
+// prvo se diže cela funkcija
+function test(){
+  console.log("iz deklarisane funkcije");
+}  
+ // zatim se diže deklaracija promenjive
+// promenljiva je "pregazila" deklarisanu funkciju
+var test;
+// dodela funkcijskog izraza promenljivoj
+// je ostala na istom mestu u kodu
+var test = function (){
+  console.log("iz function expression");
+}
+// poziv funkcije je osto na istom mestu
+test();
+
+var a = [1,2,3];
+var b =a;
+console.log(a==b)
+console.log(a===b)
+
