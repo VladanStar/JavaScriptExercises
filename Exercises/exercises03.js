@@ -644,3 +644,11 @@ emiter.on('dogadjaj', (a, b) =>{
 emiter.emit('dogadjaj', 'a', 6);
 emiter.emit('dogadjaj', 'mika');
 emiter.emit('dogadjaj');
+
+let povratniPoziv = () => {
+  console.log(`Ziv sam!`)
+}
+
+console.log(`Pokrenuto...`)
+setTimeout(povratniPoziv, 2000)
+console.log(`Zavrsava...`)
