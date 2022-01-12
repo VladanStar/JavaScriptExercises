@@ -1,0 +1,25 @@
+#navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.title {
+  color: #343a40;
+}
+
+.showTitle {
+  color: #1483ff;
+}
+
+.showImg {
+  width: 100%;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
