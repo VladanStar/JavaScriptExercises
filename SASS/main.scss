@@ -1,16 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap');
-$bodyFont:'Open Sans', sans-serif;
-$headingsFont :'Caveat', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap");
+$bodyFont: "Open Sans", sans-serif;
+$headingsFont: "Caveat", cursive;
+$font:16px;
+$white:#fff;
 body {
-background: wheat;
-font-family: $bodyFont;
-h1, h2, h3, h4, h5, h6 {
+  background: wheat;
+  font-family: $bodyFont;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: $headingsFont;
-
-}
+  }
 }
 * {
-    margin: 0;
-    padding: inherit;
-    box-sizing: border-box;
+  margin: 0;
+  padding: inherit;
+  box-sizing: border-box;
+}
+/******************
+header
+/***************/
+
+header {
+    background-image: url(./img/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 2rem;
+    }
 }

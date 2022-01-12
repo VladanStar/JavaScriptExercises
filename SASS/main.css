@@ -4,7 +4,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-body h1, body h2, body h3, body h4, body h5, body h6 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   font-family: "Caveat", cursive;
 }
 
@@ -13,5 +18,32 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   padding: inherit;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+/******************
+header
+/***************/
+header {
+  background-image: url(./img/header.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header p {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
