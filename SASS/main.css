@@ -13,6 +13,15 @@ body h6 {
   font-family: "Caveat", cursive;
 }
 
+.underline, header p::after {
+  display: block;
+  content: "";
+  width: 200px;
+  height: 2px;
+  background: orangered;
+  margin: 20px auto 0 auto;
+}
+
 * {
   margin: 0;
   padding: inherit;
@@ -24,7 +33,8 @@ body h6 {
 header
 /***************/
 header {
-  background-image: url(./img/header.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./img/header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/header.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -41,9 +51,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
 }
 
 header p {
   font-size: 2rem;
+}
+
+header h1 {
+  font-size: 7rem;
 }
 /*# sourceMappingURL=main.css.map */
