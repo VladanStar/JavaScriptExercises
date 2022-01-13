@@ -67,6 +67,10 @@ h6 {
 .container {
   width: 80%;
   margin: auto;
+  @media (max-width:768px){
+      width: 90%;
+      
+  }
 }
 /******************
 header
