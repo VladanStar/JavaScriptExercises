@@ -95,7 +95,8 @@ uvod
 
 .uvod article .text {
   background: #fff;
-  padding: 40px;
+  padding: 10px;
+  padding-bottom: 20px;
   position: relative;
   top: -15px;
 }
