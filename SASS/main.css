@@ -92,4 +92,18 @@ uvod
 .uvod article img {
   width: 100%;
 }
+
+.uvod article .text {
+  background: #fff;
+  padding: 40px;
+  position: relative;
+  top: -15px;
+}
+
+.uvod article .text h4 {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
 /*# sourceMappingURL=main.css.map */

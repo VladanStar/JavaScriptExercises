@@ -23,7 +23,6 @@ body {
   }
 
 .underline {
-
     display: block;
     content: "";
     width: 200px;
@@ -77,6 +76,19 @@ uvod
         flex: 0 0 48%;
         img {
             width: 100%;
+        }
+        .text {
+            background: $white;
+            padding: 40px;
+            position: relative;
+            top: -15px;
+            h4 {
+                margin: 20px 0;
+                font-size: 1.2rem;
+                font-family: $bodyFont;
+                font-weight: 300;
+
+            }
         }
     }
 }
