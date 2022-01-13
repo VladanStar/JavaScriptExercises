@@ -7,6 +7,22 @@ $orange:orangered;
 $lightGray:#eee;
 $gray:#444;
 $padding:10px 0; 
+
+@mixin btn {
+    padding: 15px 30px;
+    background: $orange;
+    margin-top: 30px;
+    font-size: 1rem;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    &:hover {
+        cursor: pointer;
+        background: $gray;
+        color: $white;
+    }
+}
+
 body {
   background: wheat;
   font-family: $bodyFont;
@@ -70,25 +86,36 @@ uvod
 /***************/
 .uvod {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: $padding;
+    text-align: center;
     article {
-        flex: 0 0 48%;
+        flex: 0 0 40%;
         img {
             width: 100%;
         }
         .text {
             background: $white;
             padding: 10px;
-            padding-bottom: 20px;
+            
             position: relative;
             top: -15px;
             h4 {
-                margin: 20px 0;
+                margin: 10px 0;
                 font-size: 1.2rem;
                 font-family: $bodyFont;
                 font-weight: 300;
-
+                &::after {
+                    @extend .underline;
+                    width: 70px;
+                }
+            }
+            h2{
+                margin: 10px 0;
+                font-size: 2.5rem;
+            }
+            button {
+                @include btn;
             }
         }
     }

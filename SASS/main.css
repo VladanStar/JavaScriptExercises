@@ -15,7 +15,7 @@ h6 {
   font-family: "Caveat", cursive;
 }
 
-.underline, header p::after {
+.underline, header p::after, .uvod article .text h4::after {
   display: block;
   content: "";
   width: 200px;
@@ -77,16 +77,16 @@ uvod
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 10px 0;
+  text-align: center;
 }
 
 .uvod article {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 48%;
-          flex: 0 0 48%;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
 }
 
 .uvod article img {
@@ -96,15 +96,39 @@ uvod
 .uvod article .text {
   background: #fff;
   padding: 10px;
-  padding-bottom: 20px;
   position: relative;
   top: -15px;
 }
 
 .uvod article .text h4 {
-  margin: 20px 0;
+  margin: 10px 0;
   font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+}
+
+.uvod article .text h4::after {
+  width: 70px;
+}
+
+.uvod article .text h2 {
+  margin: 10px 0;
+  font-size: 2.5rem;
+}
+
+.uvod article .text button {
+  padding: 15px 30px;
+  background: orangered;
+  margin-top: 30px;
+  font-size: 1rem;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+
+.uvod article .text button:hover {
+  cursor: pointer;
+  background: #444;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
