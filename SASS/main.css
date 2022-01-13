@@ -168,4 +168,72 @@ cta
 .cta h2 {
   font-size: 6rem;
 }
+
+/******************
+galerija
+/***************/
+.galerija {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.galerija article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  margin-bottom: 30px;
+}
+
+.galerija article img {
+  width: 100%;
+  border: 15px solid #fff;
+  -webkit-box-shadow: 10px;
+          box-shadow: 10px;
+  -webkit-box-shadow: 0 0 20px #999;
+          box-shadow: 0 0 20px #999;
+}
+
+.galerija article img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  border: 15px solid orangered;
+}
+
+/************
+footer
+************/
+footer {
+  padding: 10px;
+  text-align: center;
+  background: #444;
+}
+
+footer a {
+  color: orangered;
+  margin: 20px 20px;
+}
+
+footer a i {
+  font-size: 2rem;
+}
+
+footer a:hover {
+  color: #eee;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+footer p {
+  color: #eee;
+  font-size: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
