@@ -7,6 +7,7 @@ $orange:orangered;
 $lightGray:#eee;
 $gray:#444;
 $padding:10px 0; 
+$transition:.3s ease;
 
 @mixin btn {
     padding: 15px 30px;
@@ -20,8 +21,19 @@ $padding:10px 0;
         cursor: pointer;
         background: $gray;
         color: $white;
+        transition: $transition;
     }
 }
+@mixin  pozadinskeSlike {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+}
+
 
 body {
   background: wheat;
@@ -62,13 +74,8 @@ header
 header {
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./img/header.jpg);
     height: 100vh;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $white;
+  @include pozadinskeSlike;
+   
     p {
         font-size: 2rem;
         font-weight: 300;
@@ -119,4 +126,25 @@ uvod
             }
         }
     }
+}
+/******************
+cta
+/***************/
+.cta {
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./img/cta.jpg);
+    height: 100vh;
+    @include pozadinskeSlike;
+h4 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    font-family: $bodyFont;
+    &::after {
+        @extend .underline;
+    }
+}
+h2{
+    font-size: 6rem;
+}
+
+
 }
