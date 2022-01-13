@@ -65,6 +65,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 70vh;
+  }
 }
 
 header p {
@@ -72,8 +79,20 @@ header p {
   font-weight: 300;
 }
 
+@media (max-width: 768px) {
+  header p {
+    font-size: 1.6rem;
+  }
+}
+
 header h1 {
   font-size: 7rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
 }
 
 /******************
@@ -87,12 +106,22 @@ uvod
       justify-content: space-around;
   padding: 10px 0;
   text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .uvod article {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;
           flex: 0 0 40%;
+}
+
+@media (max-width: 768px) {
+  .uvod article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .uvod article img {
@@ -163,6 +192,7 @@ cta
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  text-align: center;
 }
 
 .cta h4 {
@@ -171,8 +201,21 @@ cta
   font-family: "Open Sans", sans-serif;
 }
 
+@media (max-width: 768px) {
+  .cta h4 {
+    font-size: 1.2rem;
+  }
+}
+
 .cta h2 {
   font-size: 6rem;
+}
+
+@media (max-width: 768px) {
+  .cta h2 {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
 }
 
 /******************
@@ -195,6 +238,14 @@ galerija
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .galerija article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .galerija article img {

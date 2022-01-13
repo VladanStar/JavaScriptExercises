@@ -34,6 +34,7 @@ $boxShadow: 0 0 20px #999;
   justify-content: center;
   align-items: center;
   color: $white;
+  text-align: center;
 }
 
 body {
@@ -82,16 +83,29 @@ header {
   height: 100vh;
   @include pozadinskeSlike;
 
+  @media (max-width:768px){
+   height: 70vh;
+    
+}
+
   p {
     font-size: 2rem;
     font-weight: 300;
     &::after {
       @extend .underline;
     }
+    @media (max-width:768px){
+        font-size: 1.6rem;
+         
+     }
   }
 
   h1 {
     font-size: 7rem;
+    @media (max-width:768px){
+       font-size: 3rem;
+        
+    }
   }
 }
 /******************
@@ -102,8 +116,12 @@ uvod
   justify-content: space-around;
   padding: $padding;
   text-align: center;
+  flex-wrap: wrap;
   article {
     flex: 0 0 40%;
+    @media(max-width: 768px) {
+        flex: 0 0 100%;
+    }
     img {
       width: 100%;
     }
@@ -132,6 +150,7 @@ uvod
       }
     }
   }
+  
 }
 /******************
 cta
@@ -148,9 +167,16 @@ cta
     &::after {
       @extend .underline;
     }
+    @media(max-width: 768px) {
+        font-size: 1.2rem;
+    }
   }
   h2 {
     font-size: 6rem;
+    @media(max-width: 768px) {
+        font-size: 3rem;
+        margin-top: 20px;
+    }
   }
 }
 
@@ -165,6 +191,10 @@ galerija
   article {
     flex: 0 0 48%;
     margin-bottom: 30px;
+
+  @media(max-width: 768px) {
+          flex: 0 0 100%;
+        }
     img {
       width: 100%;
       border: 15px solid $white;
