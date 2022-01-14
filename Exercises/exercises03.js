@@ -690,3 +690,36 @@ function prikaziSve(){
 }
 
 prikaziSve();
+
+let x = false;
+let y= 3+x;
+console.log(y);
+let z = 'Miki ' + x;
+console.log(z)
+
+x = true;
+y = 3 + x;
+console.log(y);
+z = 'Miki' + x;
+console.log(z)
+
+x = 0;
+y = x ? 'nije nula' : 'nula';
+console.log(y)
+
+console.log(8 * null);
+console.log('5' - 1);
+
+console.log('5' + 1)
+console.log('pet' * 2);
+
+console.log(false == 0);
+console.log(null == undefined)
+console.log(null == 0);
+
+
+console.log(undefined || 'Karlo');
+
+console.log('Karlo' || 'Korisnik');
+
+console.log(2 != 1 && 4 !=3 && 0== 4 && 2 !=3)
