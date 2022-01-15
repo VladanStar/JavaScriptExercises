@@ -723,3 +723,17 @@ console.log(undefined || 'Karlo');
 console.log('Karlo' || 'Korisnik');
 
 console.log(2 != 1 && 4 !=3 && 0== 4 && 2 !=3)
+
+let x = "van"
+const f1 = function () {
+  let x = 'unutar f1';
+}
+f1();
+console.log(x);
+
+const f2 = function () {
+  x = 'unutar f2';
+  console.log(x);
+}
+f2();
+console.log(x);
