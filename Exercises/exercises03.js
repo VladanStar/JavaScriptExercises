@@ -737,3 +737,21 @@ const f2 = function () {
 }
 f2();
 console.log(x);
+
+let obj = {
+    ime: "Miki",
+    length: 4
+};
+
+console.log(obj.length);
+console.log(obj.ime);
+
+console.log(obj.duzina);
+
+console.log(obj["ime"]);
+console.log(obj[ String.fromCharCode(105) + "me"]);
+
+console.log(null.length);
+console.log(null.duzina);
+console.log(undefined.length);
+console.log(undefined.duzina);
