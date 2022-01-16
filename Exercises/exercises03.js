@@ -946,3 +946,15 @@ console.log(
     .filter((person) => person.sex == "m")
     .filter(person.born > 1900 && person.born < 1925)
 );
+
+
+let niz = [2,4,3,1,-5,12,7];
+// console.log(niz);
+
+console.log(niz.reduce((a,b)=>a+b,0));
+
+console.log(niz.filter((a) => a>=0).reduce((a,b) =>a+b,0 ));
+
+
+console.log(niz.reduce((a,b) =>(a>b)?a:b));
+console.log(niz.reduce((a,b) =>(a<b)?a:b));
