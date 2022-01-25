@@ -1,3 +1,42 @@
+// 38. What is the output of below code
+const props = [
+  { id: 1, name: 'John'},
+  { id: 2, name: 'Jack'},
+  { id: 3, name: 'Tom'}
+];
+
+const [,, { name }] = props;
+console.log(name);
+// 1: Tom
+// 2: Error
+// 3: undefined
+// 4: John
+// Answer
+// Answer: 1
+// It is possible to combine Array and Object destructuring. In this case, the third element in the array props accessed first followed by name property in the object.
+
+// 39. What is the output of below code
+function checkType(num = 1) {
+  console.log(typeof num);
+}
+
+checkType();
+checkType(undefined);
+checkType('');
+checkType(null);
+// 1: number, undefined, string, object
+// 2: undefined, undefined, string, object
+// 3: number, number, string, object
+// 4: number, number, number, number
+// Answer
+// Answer: 3
+// If the function argument is set implicitly(not passing argument) or explicitly to undefined, the value of the argument is the default parameter. Whereas for other falsy values('' or null), the value of the argument is passed as a parameter.
+
+// Hence, the result of function calls categorized as below,
+
+// The first two function calls logs number type since the type of default value is number
+// The type of '' and null values are string and object type respectively.
+
 
 // 40. What is the output of below code
 function add(item, items = []) {
