@@ -1,6 +1,42 @@
+// 1. What is the output of below code
+var car = new Vehicle("Honda", "white", "2010", "UK");
+console.log(car);
 
+function Vehicle(model, color, year, country) {
+    this.model = model;
+    this.color = color;
+    this.year = year;
+    this.country = country;
+}
+// 1: Undefined
+// 2: ReferenceError
+// 3: null
+// 4: {model: "Honda", color: "white", year: "2010", country: "UK"}
+// Answer
+// Answer: 4
+// The function declarations are hoisted similar to any variables. So the placement for Vehicle function declaration doesn't make any difference.
 
+// 2. What is the output of below code
+function foo() {
+    let x = y = 0;
+    x++;
+    y++;
+    return x;
+}
 
+console.log(foo(), typeof x, typeof y);
+// 1: 1, undefined and undefined
+// 2: ReferenceError: X is not defined
+// 3: 1, undefined and number
+// 4: 1, number and number
+// Answer
+// Answer: 3
+// Of course the return value of foo() is 1 due to the increment operator. But the statement let x = y = 0 declares a local variable x. Whereas y declared as a global variable accidentally. This statement is equivalent to,
+
+ let x;
+ window.y = 0;
+ x = window.y;
+// Since the block scoped variable x is undefined outside of the function, the type will be undefined too. Whereas the global variable y is available outside the function, the value is 0 and type is number.
 
 // 3. What is the output of below code
 function main(){
