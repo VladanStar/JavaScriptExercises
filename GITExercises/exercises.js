@@ -1,4 +1,220 @@
 
+
+// 14. What is the output of below code
+console.log( String.prototype.trimLeft.name === 'trimLeft' );
+console.log( String.prototype.trimLeft.name === 'trimStart' );
+// 1: True, False
+// 2: False, True
+// Answer
+// Answer: 2
+// In order to be consistent with functions like String.prototype.padStart, the standard method name for trimming the whitespaces is considered as trimStart. Due to web web compatibility reasons, the old method name 'trimLeft' still acts as an alias for 'trimStart'. Hence, the prototype for 'trimLeft' is always 'trimStart'
+
+// 15. What is the output of below code
+console.log(Math.max());
+// 1: undefined
+// 2: Infinity
+// 3: 0
+// 4: -Infinity
+// Answer
+// Answer: 4
+// -Infinity is the initial comparant because almost every other value is bigger. So when no arguments are provided, -Infinity is going to be returned. Note: Zero number of arguments is a valid case.
+
+// 16. What is the output of below code
+console.log(10 == [10]);
+console.log(10 == [[[[[[[10]]]]]]]);
+// 1: True, True
+// 2: True, False
+// 3: False, False
+// 4: False, True
+// Answer
+// Answer: 1
+// As per the comparison algorithm in the ECMAScript specification(ECMA-262), the above expression converted into JS as below
+
+10 === Number([10].valueOf().toString()) // 10
+// So it doesn't matter about number brackets([]) around the number, it is always converted to a number in the expression.
+
+// 17. What is the output of below code
+console.log(10 + '10');
+console.log(10 - '10');
+// 1: 20, 0
+// 2: 1010, 0
+// 3: 1010, 10-10
+// 4: NaN, NaN
+// Answer
+// Answer: 2
+// The concatenation operator(+) is applicable for both number and string types. So if any operand is string type then both operands concatenated as strings. Whereas subtract(-) operator tries to convert the operands as number type.
+
+
+// 18. What is the output of below code
+console.log([0] == false);
+if([0]) {
+console.log("I'm True");
+} else {
+console.log("I'm False");
+}
+// 1: True, I'm True
+// 2: True, I'm False
+// 3: False, I'm True
+// 4: False, I'm False
+// Answer
+// Answer: 1
+// In comparison operators, the expression [0] converted to Number([0].valueOf().toString()) which is resolved to false. Whereas [0] just becomes a truthy value without any conversion because there is no comparison operator.
+
+// 19. What is the output of below code
+console.log([1, 2] + [3, 4]);
+// 1: [1,2,3,4]
+// 2: [1,2][3,4]
+// 3: SyntaxError
+// 4: 1,23,4
+// Answer
+// Answer: 4
+// The + operator is not meant or defined for arrays. So it converts arrays into strings and concatenates them.
+
+// 20. What is the output of below code
+const numbers = new Set([1, 1, 2, 3, 4]);
+console.log(numbers);
+
+const browser = new Set('Firefox');
+console.log(browser);
+// 1: {1, 2, 3, 4}, {"F", "i", "r", "e", "f", "o", "x"}
+// 2: {1, 2, 3, 4}, {"F", "i", "r", "e", "o", "x"}
+// 3: [1, 2, 3, 4], ["F", "i", "r", "e", "o", "x"]
+// 4: {1, 1, 2, 3, 4}, {"F", "i", "r", "e", "f", "o", "x"}
+// Answer
+// Answer: 1
+// Since Set object is a collection of unique values, it won't allow duplicate values in the collection. At the same time, it is case sensitive data structure.
+
+// 21. What is the output of below code
+console.log(NaN === NaN);
+// 1: True
+// 2: False
+// Answer
+// Answer: 2
+// JavaScript follows IEEE 754 spec standards. As per this spec, NaNs are never equal for floating-point numbers.
+
+// 22. What is the output of below code
+let numbers = [1, 2, 3, 4, NaN];
+console.log(numbers.indexOf(NaN));
+// 1: 4
+// 2: NaN
+// 3: SyntaxError
+// 4: -1
+// Answer
+// Answer: 4
+// The indexOf uses strict equality operator(===) internally and NaN === NaN evaluates to false. Since indexOf won't be able to find NaN inside an array, it returns -1 always. But you can use Array.prototype.findIndex method to find out the index of NaN in an array or You can use Array.prototype.includes to check if NaN is present in an array or not.
+
+let numbers = [1, 2, 3, 4, NaN];
+console.log(numbers.findIndex(Number.isNaN)); // 4
+
+console.log(numbers.includes(NaN)); // true
+
+// 23. What is the output of below code
+let [a, ...b,] = [1, 2, 3, 4, 5];
+console.log(a, b);
+// 1: 1, [2, 3, 4, 5]
+// 2: 1, {2, 3, 4, 5}
+// 3: SyntaxError
+// 4: 1, [2, 3, 4]
+// Answer
+// Answer: 3
+// When using rest parameters, trailing commas are not allowed and will throw a SyntaxError. If you remove the trailing comma then it displays 1st answer
+
+let [a, ...b] = [1, 2, 3, 4, 5];
+console.log(a, b); // 1, [2, 3, 4, 5]
+
+
+// 26. What is the output of below code
+async function func() {
+   await 10;
+}
+console.log(func());
+// 1: Promise {<fulfilled>: 10}
+// 2: 10
+// 3: SyntaxError
+// 4: Promise {<resolved>: undefined}
+// Answer
+// Answer: 4
+// The await expression returns value 10 with promise resolution and the code after each await expression can be treated as existing in a .then callback. In this case, there is no return expression at the end of the function. Hence, the default return value of undefined is returned as the resolution of the promise. The above async function is equivalent to below expression,
+
+function func() {
+   return Promise.resolve(10).then(() => undefined)
+}
+
+// 27. What is the output of below code
+function delay() {
+  return new Promise(resolve => setTimeout(resolve, 2000));
+}
+
+async function delayedLog(item) {
+  await delay();
+  console.log(item);
+}
+
+async function processArray(array) {
+  array.forEach(item => {
+    await delayedLog(item);
+  })
+}
+
+processArray([1, 2, 3, 4]);
+// 1: SyntaxError
+// 2: 1, 2, 3, 4
+// 3: 4, 4, 4, 4
+// 4: 4, 3, 2, 1
+// Answer
+// Answer: 1
+// Even though “processArray” is an async function, the anonymous function that we use for forEach is synchronous. If you use await inside a synchronous function then it throws a syntax error.
+
+
+// 28. What is the output of below code
+function delay() {
+  return new Promise(resolve => setTimeout(resolve, 2000));
+}
+
+async function delayedLog(item) {
+  await delay();
+  console.log(item);
+}
+
+async function process(array) {
+  array.forEach(async (item) => {
+    await delayedLog(item);
+  });
+  console.log('Process completed!');
+}
+process([1, 2, 3, 5]);
+// 1: 1 2 3 5 and Process completed!
+// 2: 5 5 5 5 and Process completed!
+// 3: Process completed! and 5 5 5 5
+// 4: Process completed! and 1 2 3 5
+// Answer
+// Answer: 4
+// The forEach method will not wait until all items are finished but it just runs the tasks and goes next. Hence, the last statement is displayed first followed by a sequence of promise resolutions.
+
+// But you control the array sequence using for..of loop,
+
+async function processArray(array) {
+  for (const item of array) {
+    await delayedLog(item);
+  }
+  console.log('Process completed!');
+}
+
+// 29. What is the output of below code
+var set = new Set();
+set.add("+0").add("-0").add(NaN).add(undefined).add(NaN);;
+console.log(set);
+// 1: Set(4) {"+0", "-0", NaN, undefined}
+// 2: Set(3) {"+0", NaN, undefined}
+// 3: Set(5) {"+0", "-0", NaN, undefined, NaN}
+// 4: Set(4) {"+0", NaN, undefined, NaN}
+// Answer
+// Answer: 1
+// Set has few exceptions from equality check,
+
+// All NaN values are equal
+// Both +0 and -0 considered as different values
+
 // 30. What is the output of below code
 const sym1 = Symbol('one');
 const sym2 = Symbol('one');
