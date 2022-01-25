@@ -1,10 +1,8 @@
 function f(x) {
-    x+=1;
-    
+    x+=1;   
 }
 function g(x) {
-    x.value *=5;
-    
+    x.value *=5;  
 }
 var a;
 var b=1;
