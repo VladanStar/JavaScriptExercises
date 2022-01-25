@@ -366,6 +366,18 @@ console.log(a, b);
 let [a, ...b] = [1, 2, 3, 4, 5];
 console.log(a, b); // 1, [2, 3, 4, 5]
 
+// 25. What is the output of below code
+async function func() {
+   return 10;
+}
+console.log(func());
+// 1: Promise {<fulfilled>: 10}
+// 2: 10
+// 3: SyntaxError
+// 4: Promise {<rejected>: 10}
+// Answer
+// Answer: 1
+// Async functions always return a promise. But even if the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise. The above async function is equivalent to below expression,
 
 // 26. What is the output of below code
 async function func() {
