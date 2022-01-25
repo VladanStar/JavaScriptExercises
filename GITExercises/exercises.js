@@ -1,6 +1,56 @@
+// 50. What is the output of below code
+function Person() { }
 
+Person.prototype.walk = function() {
+  return this;
+}
 
-// 52. What is the output of below code
+Person.run = function() {
+  return this;
+}
+
+let user = new Person();
+let walk = user.walk;
+console.log(walk());
+
+let run = Person.run;
+console.log(run());
+// 1: undefined, undefined
+// 2: Person, Person
+// 3: SyntaxError
+// 4: Window, Window
+// Answer
+// Answer: 4
+// When a regular or prototype method is called without a value for this, the methods return an initial this value if the value is not undefined. Otherwise global window object will be returned. In our case, the initial this value is undefined so both methods return window objects.
+
+// 51. What is the output of below code
+class Vehicle {
+  constructor(name) {
+    this.name = name;
+  }
+
+  start() {
+    console.log(`${this.name} vehicle started`);
+  }
+}
+
+class Car extends Vehicle {
+  start() {
+    console.log(`${this.name} car started`);
+    super.start();
+  }
+}
+
+const car = new Car('BMW');
+console.log(car.start());
+// 1: SyntaxError
+// 2: BMW vehicle started, BMW car started
+// 3: BMW car started, BMW vehicle started
+// 4: BMW car started, BMW car started
+// Answer
+// Answer: 3
+// The super keyword is used to call methods of a superclass. Unlike other languages the super invocation doesn't need to be a first statement. i.e, The statements will be executed in the same order of code.
+// // 52. What is the output of below code
 const USER = {'age': 30};
 USER.age = 25;
 console.log(USER.age);
