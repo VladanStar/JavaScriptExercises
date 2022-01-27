@@ -1041,3 +1041,17 @@ function prikaziNisku(niska){
   }
 
   prikaziSve();
+
+  let back = function goBack() {
+    window.history.back();
+  }
+  let forw = function goForward() {
+    window.history.forward();
+}
+console.log(forw);
+console.log(back);
+
+console.log(isFinite(2.3));
+console.log(isFinite("boolena"));
+
+console.log(window.navigator.platform);
