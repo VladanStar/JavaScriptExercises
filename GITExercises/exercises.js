@@ -975,7 +975,21 @@ let arr2 = [3, 4, 5];
 arr1.push(...arr2);
 
 console.log(arr1)
-
+var flight = {
+  airline: "Oceanic",
+  number: 815,
+  departure: {
+          IATA: "SYD",
+          time: "2004-09-22 14:55",
+          city: "Sydney"
+  },
+  arrival: {
+          IATA: "LAX",
+          time: "2004-09-23 10:42",
+          city: "Los Angeles"
+  }
+};
+console.log(flight.airline + flight.arrival.time)
 
 // 7. Iterirati kroz objekat 'obj' tako da se pronađu respektivno sve vrednosti polja 'find' i
 // da se nakon toga spoje u rečenicu:
@@ -1006,3 +1020,4 @@ const asArray = Object.entries(obj);
 // console.log(justStrings)
 
 console.log(obj["find"])
+
