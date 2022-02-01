@@ -1014,6 +1014,11 @@ find: 'je'
 find: 'to'
 };
 const asArray = Object.entries(obj);
+
+for (const property in asArray) {
+  console.log(`${property}: ${obj[property]}`);
+}
+
 // //const filtered = asArray.filter(([key, value])=> typeof value == 'string');
 // const filtered = asArray.filter(([key, value])=> (key = "find"));
 // const justStrings = Object.fromEntries(filtered);
