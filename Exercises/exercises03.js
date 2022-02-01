@@ -1055,3 +1055,25 @@ console.log(isFinite(2.3));
 console.log(isFinite("boolena"));
 
 console.log(window.navigator.platform);
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, "0");
+var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + "/" + dd + "/" + yyyy;
+// document.write(today);
+
+console.log(today);
+console.log(dd)
+console.log(mm);
+console.log(yyyy);
+
+console.log(Math.floor(Math.random() * 10) + 1);     // returns a random integer from 1 to 10
+console.log(Math.floor(Math.random() * 100) + 1);     // returns a random integer from 1 to 100
+
+function randomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+console.log(randomInteger(1, 100)); // returns a random integer from 1 to 100
+console.log(randomInteger(1, 1000)); // returns a random integer from 1 to 1000
