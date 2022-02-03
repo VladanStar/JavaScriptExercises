@@ -1,4 +1,34 @@
 
+
+
+// 14.
+
+function foo(x,y){
+    x=x || 11;
+    y=y || 31;
+    console.log(x+y);
+}
+foo(0,42);
+
+//53
+
+//16.
+
+console.log(1+ "2" + "2");
+console.log(1+ + "2" + "2");
+console.log(1+ - "1" + "2");
+console.log( + 1+ "1" + "2");
+console.log("A" -"B" + "2");
+console.log("A"- "2" + 2);
+
+
+// 122
+// 32
+// 02
+// 112
+// NaN2
+// NaN
+
 //6.
 
 for(let j=0; j<5;j++){
@@ -79,6 +109,7 @@ fun1(x);
 console.log(`${x.firstName} ${x.lastName}`)
 
 //John Smith
+
 //3. 
 
 for(var i=0; i<=5; i++){
