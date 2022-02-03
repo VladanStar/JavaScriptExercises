@@ -1,6 +1,70 @@
 
-// 1. 
+//6.
 
+for(let j=0; j<5;j++){
+
+}
+console.log(j)
+
+//ReferenceError: j is not defined
+
+// 5.
+
+const func1 = (a=2)=>{
+    a=0 || 1;
+    console.log(a);
+    console.log(1 || 2);
+    console.log(0 && 1);
+    console.log(1  && 2);
+}
+func1();
+
+// 1 1 0 2
+
+//2.
+function initArray(){
+    var arr =[];
+    for(var i=0;i<3;i++){
+        arr.push(function(){
+            return i
+        })
+    }
+    return arr;
+}
+var arr = initArray();
+const [first, second, third] =arr;
+console.log(first());
+console.log(second());
+console.log(third());
+
+// 3 3 3
+
+//8.
+
+function print(){
+    console.log(arguments[0]);
+}
+print("Hello World")
+
+//12.
+
+(function(){
+    var a = {};
+    b={key:'b'};
+    c= {key:'c'};
+    let d;
+    a[b]=123;
+    a[c]=456
+    console.log(a[b])
+})();
+
+//456
+
+// 13.
+
+console.log(typeof(null)) 
+
+//object 
 
 //2.
 
@@ -51,7 +115,7 @@ for(var i= 0; i<5; i++){
 }
 console.log(i);
 
-//1 2 3 4 5
+// 0 1 2 3 4 5
 
 //7.
 
