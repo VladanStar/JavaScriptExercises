@@ -1,6 +1,6 @@
 
 
-
+console.log(typeof typeof 1)
 // 14.
 
 function foo(x,y){
@@ -277,3 +277,12 @@ func1();
 })();
 
 //A D C B
+promise.then(function () {
+    promises.then(function () {
+        console.log("B")
+    });
+    console.log("A");
+})
+promises.then(function () {
+    console.log("C")
+})
