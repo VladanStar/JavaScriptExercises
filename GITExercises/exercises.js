@@ -965,3 +965,64 @@ console.log(arr == str);
 // // Answer
 // // Answer: 3
 // // Arrays have their own implementation of toString method that returns a comma-separated list of elements. So the above code snippet returns true. In order to avoid conversion of array type, we should use === for comparison.
+let array1 = [1, 2, 3];
+let array2 = [4, 5, 6];
+array1.concat(array2);
+console.log(array1)
+
+let arr1 = [0, 1, 2];
+let arr2 = [3, 4, 5];
+arr1.push(...arr2);
+
+console.log(arr1)
+var flight = {
+  airline: "Oceanic",
+  number: 815,
+  departure: {
+          IATA: "SYD",
+          time: "2004-09-22 14:55",
+          city: "Sydney"
+  },
+  arrival: {
+          IATA: "LAX",
+          time: "2004-09-23 10:42",
+          city: "Los Angeles"
+  }
+};
+console.log(flight.airline + flight.arrival.time)
+
+// 7. Iterirati kroz objekat 'obj' tako da se pronađu respektivno sve vrednosti polja 'find' i
+// da se nakon toga spoje u rečenicu:
+const obj = {
+a: [{
+b: {
+v: [{
+g: [1, 2, 3]
+}, {
+d: true,
+find: 'To'
+}]
+}
+}, {
+c: ['one', 'two', 'three'],
+d: [{
+a: ''
+}, {
+find: 'je'
+}]
+}],
+find: 'to'
+};
+const asArray = Object.entries(obj);
+
+for (const property in asArray) {
+  console.log(`${property}: ${obj[property]}`);
+}
+
+// //const filtered = asArray.filter(([key, value])=> typeof value == 'string');
+// const filtered = asArray.filter(([key, value])=> (key = "find"));
+// const justStrings = Object.fromEntries(filtered);
+// console.log(justStrings)
+
+console.log(obj["find"])
+
