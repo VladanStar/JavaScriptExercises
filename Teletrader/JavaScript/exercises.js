@@ -277,6 +277,10 @@ func1();
 })();
 
 //A D C B
+
+
+//21.
+
 Promise.then(function () {
     promises.then(function () {
         console.log("B")
@@ -286,3 +290,17 @@ Promise.then(function () {
 Promise.then(function () {
     console.log("C")
 })
+
+//22.
+console.log(0 == null);
+console.log("0" == '');
+console.log(false == {});
+console.log(0 == []);
+console.log("" == null)
+
+false
+false
+false
+true
+false
+
