@@ -277,12 +277,12 @@ func1();
 })();
 
 //A D C B
-promise.then(function () {
+Promise.then(function () {
     promises.then(function () {
         console.log("B")
     });
     console.log("A");
 })
-promises.then(function () {
+Promise.then(function () {
     console.log("C")
 })
