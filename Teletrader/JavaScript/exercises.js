@@ -320,3 +320,23 @@ console.log(vladan)
 //const vladan = 34; // ne moze
  vladan = 34 // ne moze
 console.log(vladan)
+
+
+// spread && rest operator
+const oldArray = [1, 2, 3];
+const newArray = [...oldArray, 4, 5]; // This now is [1, 2, 3, 4, 5];
+//Here's the spread operator used on an object:
+
+const oldObject = {
+    name: 'Max'
+};
+const newObject = {
+    ...oldObject,
+    age: 28
+};
+//newObject  would then be
+
+// {
+//     name: 'Max',
+//     age: 28
+// }
