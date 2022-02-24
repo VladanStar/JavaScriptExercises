@@ -317,6 +317,6 @@ console.log(vladan)
 
 const vladan = 23;
 console.log(vladan)
-const vladan = 34; // ne moze
+//const vladan = 34; // ne moze
  vladan = 34 // ne moze
 console.log(vladan)
