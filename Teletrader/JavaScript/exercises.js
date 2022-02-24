@@ -340,3 +340,11 @@ const newObject = {
 //     name: 'Max',
 //     age: 28
 // }
+
+const person = {
+    name:"Vladan"
+}
+const secondPerson = person;
+console.log(secondPerson);
+console.log(person == secondPerson)
+console.log(person === secondPerson)
