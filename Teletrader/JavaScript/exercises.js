@@ -348,3 +348,9 @@ const secondPerson = person;
 console.log(secondPerson);
 console.log(person == secondPerson)
 console.log(person === secondPerson)
+const thirdPerson = {
+    ...person
+};
+console.log(thirdPerson)
+console.log(thirdPerson == person);
+console.log(thirdPerson === person)
