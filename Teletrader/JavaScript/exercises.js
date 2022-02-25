@@ -311,14 +311,14 @@ console.log(vladan)
 
 let vladan = 23;
 console.log(vladan)
-let vladan = 34; // ne moze
+//let vladan = 34; // ne moze
  vladan = 34 //moze
 console.log(vladan)
 
 const vladan = 23;
 console.log(vladan)
 //const vladan = 34; // ne moze
- vladan = 34 // ne moze
+ //vladan = 34 // ne moze
 console.log(vladan)
 
 
