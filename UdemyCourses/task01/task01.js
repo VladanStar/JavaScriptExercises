@@ -16,3 +16,9 @@ class Person extends Human {
 const person = new Person();
 person.printMyName();
 person.printGender();
+
+const number = 1;
+const num2 = number;
+console.log(num2)
+//number = num2;
+console.log(number)
