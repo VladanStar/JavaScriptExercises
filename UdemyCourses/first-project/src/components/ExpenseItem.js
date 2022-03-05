@@ -5,8 +5,8 @@ const ExpenseItem = (props) => {
    
   return (
     < div className ="expense-item" >
-      <div>{props.id}</div>
-       <div>{props.data}</div> 
+      {/* <div>{props.id}</div> */}
+       <div>{props.date.toISOString()}</div> 
       <div className="expense-item__description">
         <h2>{props.title}</h2>
       
