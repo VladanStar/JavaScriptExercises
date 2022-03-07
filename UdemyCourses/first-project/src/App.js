@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import Expenses from "./components/Expenses/Expenses"
+import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
     <div className="App">
       <h1>Lets go started</h1>
       <h2>This is also visible!</h2>
+      <NewExpense />
       <Expenses  expenses ={expenses}/>
      
     </div>
