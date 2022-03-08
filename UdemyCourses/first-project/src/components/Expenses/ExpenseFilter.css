@@ -1,3 +1,8 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
 .expenses-filter {
     color: white;
     padding: 0 1rem;
