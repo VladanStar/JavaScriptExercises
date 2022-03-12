@@ -2,17 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
-  padding: 0.5rem;
-  margin: 1rem 0;
-  background-color: #4b4b4b;
-=======
   width: 70%;
   padding: 0.5rem;
   margin: 1rem auto;
   background-color: #494545;
 
->>>>>>> 3828d5aaaf69fbc246b023a6c81acd0418d4b9c2
 }
 
 .expense-item__description {
