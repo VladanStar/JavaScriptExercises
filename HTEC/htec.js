@@ -256,4 +256,108 @@ Promise.resolve(3)
     //33.
 const arr = [1, 4, 9];
 const sqrtSum = arr.forEach(Math.sqrt).reduce((a, b) => a + b, 0);
-console.log(sqrtSum)
+console.log(sqrtSum);
+
+//34.
+
+Object.prototype.value = 2;
+Object.prototype.increaseValue = function () {
+    this.value++;
+}
+const objA = {};
+objA.increaseValue();
+
+const objB = {}
+objB.prototype.increaseValue();
+
+const objC = {value: 10};
+objC.increaseValue();
+console.log(objA.value, objB.value, objC.value)
+
+//35.
+function sum(a, b, c) {
+    let i = c;
+    let res = 0;
+    for (let i = 0; i < c; i++){
+        res += arguments[i];
+    }
+    res += arguments[i];
+    return res;
+}
+console.log(sum(1, 2, "3"));
+
+//36.
+
+let a = "a";
+const b = "d";
+try {
+    a = "b";
+    b = "c";
+    var c = 'd';
+}
+catch {
+    a = 'c';
+    let b = "d";
+}
+finally {
+    a = "f";
+    var d = 'g';
+}
+console.log(a, 'b', c, d);
+
+//37.
+const later = (func) => {
+    return new Promise((resolve, reject) => {
+        if (later) {
+            resolve(func(4))
+        }
+        else {
+            reject(new Error("Later is not Defined"))
+        }
+    })
+}
+later(x => Promise.resolve(12 + x))
+    .then(console.log)
+    .catch(console.log);
+
+//38. 
+const a = "0"; !!a == false
+const b = 2.02362; b.toFixed(2) == 2.02;
+const c = '5.28'; parseInt(c,10) =="5"
+const d = false; Boolean(d) === false;
+ const e = true; `${e}` === true 
+const f = null; f=="null" 
+const g = NaN; g == parseFloat('true')
+
+//39.
+let a = 0;
+let b = 0;
+var c;
+function count(a) {
+    a++;
+    c = a;
+    if (b) {
+        let c = 0;
+        c++;
+    }
+    b += c;
+}
+count(a);
+count(1);
+count(2);
+
+console.log(a, b, c);
+
+//40.
+var prA = new Promise((res, rej) => res());
+prA.then((...args) => console.log("prA: ", args.length));
+
+var prB = Promise.resolve();
+prB.then((...args) => console.log("prB. ", args.length));
+
+var prC = new Promise((res, rej) => rej());
+prC.catch((...args) => console.log("prC: ", args.length));
+
+var prD = Promise.reject();
+prD.catch((...args) => console.log("prD: ", args.length));
+
