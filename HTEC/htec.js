@@ -213,3 +213,47 @@ class NumberBox {
 const box = new NumberBox(2);
 box.increment;
 console.log(box.value)
+
+//27.
+const tech = async () => {
+    console.log(await Promise.resolve(3));
+
+}
+tech();
+
+//28.
+const then = async () => {
+    then().tech(x=>console.log(x));
+
+}
+then();
+
+//29.
+console.log(typeof ("x" instanceof Function));
+
+//30.
+Promise.resolve(3)
+    .then(() => Promise.resolve(4))
+    .then(x => console.log(x));
+
+    //31.
+
+Promise.resolve(3)
+    .then(() => {
+        new Error();
+    })
+    .then(() => Promise.resolve(4))
+    .then(() => Promise.reject(5))
+    .then(x => console.log(x))
+    .catch (err => console.log(err));
+
+//32.
+[1, 2, 3].map(x => x ** 3)
+    .filter(x => x > 1)
+    .map(x => x + 1)
+    .reduce((a, b) => a + b, 0)
+
+    //33.
+const arr = [1, 4, 9];
+const sqrtSum = arr.forEach(Math.sqrt).reduce((a, b) => a + b, 0);
+console.log(sqrtSum)
