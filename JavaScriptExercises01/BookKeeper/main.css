@@ -27,3 +27,17 @@ h1 {
 h1:hover {
     background: rgba(0, 0, 0, 0.8);
 }
+/* Bookmarks */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.item {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin: 10px;
+  }
