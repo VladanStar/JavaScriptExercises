@@ -35,9 +35,15 @@ h1:hover {
 
 }
 .item {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    background: rgba(22, 3, 3, 0.5);
+ color:aliceblue;
     border-radius: var(--border-radius);
     padding: 20px;
     margin: 10px;
+  }
+  .item:hover {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  a {
+    color:aliceblue
   }
