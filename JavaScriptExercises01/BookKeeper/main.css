@@ -77,3 +77,12 @@ h1:hover {
     vertical-align: sub;
     margin-right: 5px;
   }
+  /* Media Query: Large Smartphone */
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+}
