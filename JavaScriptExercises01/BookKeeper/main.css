@@ -25,65 +25,63 @@ h1 {
   user-select: none;
 }
 h1:hover {
-    background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 /* Bookmarks */
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .item {
-    background: rgba(22, 3, 3, 0.5);
- color:aliceblue;
-    border-radius: var(--border-radius);
-    padding: 20px;
-    margin: 10px;
-  }
-  .item:hover {
-    background: rgba(0, 0, 0, 0.6);
-  }
-  a {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: aliceblue;
-  }
-  
-  a:link,
-  a:visited {
-    color: white;
-    text-decoration: none;
-  }
-  
-  a:hover,
-  a:active {
-    text-decoration: underline;
-    font-weight: bolder;
-  }
-  .fa-times {
-    float: right;
-    cursor: pointer;
-    z-index: 2;
-  }
-  .name {
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-  .name img {
-    height: 20px;
-    width: 20px;
-    vertical-align: sub;
-    margin-right: 5px;
-  }
-  /* Media Query: Large Smartphone */
+  background: rgba(22, 3, 3, 0.5);
+  color: aliceblue;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 10px;
+}
+.item:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+a {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.fa-times {
+  float: right;
+  cursor: pointer;
+  z-index: 2;
+}
+.name {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.name img {
+  height: 20px;
+  width: 20px;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+/* Media Query: Large Smartphone */
 
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
     text-align: center;
-    
   }
 }
 /* Modal */
@@ -95,7 +93,6 @@ h1:hover {
   left: 0%;
   right: 0;
   bottom: 0;
-
 }
 
 .show-modal {
@@ -110,13 +107,12 @@ h1:hover {
   max-width: 95%;
   width: 500px;
   animation: modalopen 5s;
- 
 }
 @keyframes modalopen {
   from {
-opacity: 0;
+    opacity: 0;
   }
   to {
-opacity: 1;
+    opacity: 1;
   }
 }
