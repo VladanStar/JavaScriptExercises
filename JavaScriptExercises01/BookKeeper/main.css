@@ -60,6 +60,7 @@ h1:hover {
   a:hover,
   a:active {
     text-decoration: underline;
+    font-weight: bolder;
   }
   .name img {
     height: 20px;
