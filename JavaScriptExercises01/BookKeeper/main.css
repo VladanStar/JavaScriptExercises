@@ -62,6 +62,15 @@ h1:hover {
     text-decoration: underline;
     font-weight: bolder;
   }
+  .fa-times {
+    float: right;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .name {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
   .name img {
     height: 20px;
     width: 20px;
