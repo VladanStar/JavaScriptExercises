@@ -116,3 +116,12 @@ a:active {
     opacity: 1;
   }
 }
+.close-icon {
+  float: right;
+  color: white;
+  font-size: 24px;
+  position: relative;
+  top: 13px;
+  right: 13px;
+  cursor: pointer;
+}
