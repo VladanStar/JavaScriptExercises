@@ -125,3 +125,11 @@ a:active {
   right: 13px;
   cursor: pointer;
 }
+h3 {
+  margin: 0;
+}
+
+.modal-content {
+  padding: 20px;
+  background: whitesmoke;
+}
