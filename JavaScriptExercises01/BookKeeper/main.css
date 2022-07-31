@@ -137,3 +137,7 @@ h3 {
   padding: 20px;
   background: whitesmoke;
 }
+/* Form */
+.form-group {
+  height: 55px;
+}
