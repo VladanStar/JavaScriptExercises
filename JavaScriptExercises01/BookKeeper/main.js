@@ -25,10 +25,13 @@ window.addEventListener('click', (e) => (e.target === modal ? modal.classList.re
 function storeBookmark(e){
     e.preventDefault()
     console.log(e);
-    const nameValue = websiteNameel.value;
+    const nameValue = websiteNameEl.value;
     let urlValue = websiteUrlEl.value;
     console.log(nameValue, urlValue)
 }
+
+//Event Listener
+bookmarkForm.addEventListener("submit",storeBookmark)
 // Validate Form
 function validate(nameValue, urlValue) {
     const expression = /(https)?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/g;
