@@ -31,7 +31,9 @@ function storeBookmark(e){
         urlValue = `https://${urlValue}`
     }
     console.log(nameValue, urlValue)
-    validate(nameValue,urlValue);
+   if(!validate(nameValue,urlValue)){
+    return false
+   };
 }
 
 //Event Listener
