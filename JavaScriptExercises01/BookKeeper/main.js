@@ -41,6 +41,7 @@ function storeBookmark(e){
    };
    bookmarks.push(bookmark);
    console.log(bookmarks);
+   localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
    bookmarkForm.reset();
    websiteNameEl.focus();
 
@@ -65,4 +66,21 @@ function validate(nameValue, urlValue) {
     }
     // Valid
     return true;
+  }
+  // Fetch bookmarks
+function fetchBookmarks() {
+    // Get bookmarks from localStorage if available
+    if (localStorage.getItem('bookmarks')) {
+      bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+    } else {
+      // Create bookmarks array in localStorage
+      bookmarks = [
+        {
+          name: 'Jacinto Design',
+          url: 'http://jacinto.design',
+        },
+      ];
+      localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+    }
+    buildBookmarks();
   }
