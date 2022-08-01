@@ -8,6 +8,7 @@ const bookmarksContainer = document.getElementById('bookmarks-container');
 
 
 let bookmarks = [];
+//save bookmarks 
 
 // Show Modal, Focus on Input
 function showModal() {
@@ -34,6 +35,15 @@ function storeBookmark(e){
    if(!validate(nameValue,urlValue)){
     return false
    };
+   const bookmark = {
+    name:nameValue,
+    url:urlValue,
+   };
+   bookmarks.push(bookmark);
+   console.log(bookmarks);
+   bookmarkForm.reset();
+   websiteNameEl.focus();
+
 }
 
 //Event Listener
