@@ -27,11 +27,17 @@ function storeBookmark(e){
     console.log(e);
     const nameValue = websiteNameEl.value;
     let urlValue = websiteUrlEl.value;
+    if(!urlValue.includes("http://","https://")){
+        urlValue = `https://${urlValue}`
+    }
     console.log(nameValue, urlValue)
 }
 
 //Event Listener
-bookmarkForm.addEventListener("submit",storeBookmark)
+bookmarkForm.addEventListener("submit",storeBookmark);
+
+
+
 // Validate Form
 function validate(nameValue, urlValue) {
     const expression = /(https)?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/g;
