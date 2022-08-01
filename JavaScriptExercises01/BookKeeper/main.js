@@ -20,6 +20,15 @@ modalShow.addEventListener('click', showModal);
 modalClose.addEventListener('click', () => modal.classList.remove('show-modal'));
 window.addEventListener('click', (e) => (e.target === modal ? modal.classList.remove('show-modal') : false));
 
+
+//Handle Data from Form
+function storeBookmark(e){
+    e.preventDefault()
+    console.log(e);
+    const nameValue = websiteNameel.value;
+    let urlValue = websiteUrlEl.value;
+    console.log(nameValue, urlValue)
+}
 // Validate Form
 function validate(nameValue, urlValue) {
     const expression = /(https)?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/g;
