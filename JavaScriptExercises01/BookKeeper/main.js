@@ -82,5 +82,7 @@ function fetchBookmarks() {
       ];
       localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     }
-    buildBookmarks();
+    //buildBookmarks();
   }
+  //Onload Fetch Bookmarks
+  fetchBookmarks()
