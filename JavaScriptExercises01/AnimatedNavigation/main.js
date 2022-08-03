@@ -24,12 +24,12 @@ function navAnimation(direction1, direction2) {
 
 function toggleNav() {
   // Toggle: Menu Bars Open/Closed
-  menuBars.classList.toggle("change");
+  menuBars.classList.toggle('change');
   // Toggle: Menu Active
-  overlay.classList.toggle("overlay-active");
-  if (overlay.classList.contains("overlay-active")) {
+  overlay.classList.toggle('overlay-active');
+  if (overlay.classList.contains('overlay-active')) {
     // Animate In - Overlay
-    overlay.classList.replace("overlay-slide-left", "overlay-slide-right");
+    overlay.classList.replace('overlay-slide-left', 'overlay-slide-right');
     // Animate In - Nav Items
     navAnimation("out", "in");
   } else {
