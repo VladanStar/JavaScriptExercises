@@ -27,8 +27,16 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: rgba(0,0,0, 0.7);
+}
+/* Nav Menu Items */
+nav, 
+nav ul {
+height: 100vh;
+margin: 0;
+padding: 0;
+
 }
 
 
