@@ -11,19 +11,19 @@ function toggleNav() {
     // Toggle: Menu Bars Open/Closed
     menuBars.classList.toggle('change');
     // Toggle: Menu Active
-    overlay.classList.toggle('overlay-active');
+   // overlay.classList.toggle('overlay-active');
     if (overlay.classList.contains('overlay-active')) {
       // Animate In - Overlay
       overlay.classList.add('overlay-slide-right')
       //overlay.classList.replace('overlay-slide-left', 'overlay-slide-right');
       // Animate In - Nav Items
-    //   navAnimation('out', 'in');
+      navAnimation('out', 'in');
     } else {
       // Animate Out - Overlay
-      //overlay.classList.replace('overlay-slide-right', 'overlay-slide-left');
+      overlay.classList.replace('overlay-slide-right', 'overlay-slide-left');
       // Animate Out - Nav Items
-    //   navAnimation('in', 'out');
-    overlay.classList.add('overlay-slide-left')
+      navAnimation('in', 'out');
+    //overlay.classList.add('overlay-slide-left')
     }
   }
 // Event Listeners
