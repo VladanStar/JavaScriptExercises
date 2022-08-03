@@ -14,14 +14,13 @@ function navAnimation(direction1, direction2) {
     });
   }
 
-function toggleNav() {
+  function toggleNav() {
     // Toggle: Menu Bars Open/Closed
     menuBars.classList.toggle('change');
     // Toggle: Menu Active
-   // overlay.classList.toggle('overlay-active');
+    overlay.classList.toggle('overlay-active');
     if (overlay.classList.contains('overlay-active')) {
       // Animate In - Overlay
-      //overlay.classList.add('overlay-slide-right')
       overlay.classList.replace('overlay-slide-left', 'overlay-slide-right');
       // Animate In - Nav Items
       navAnimation('out', 'in');
@@ -30,15 +29,13 @@ function toggleNav() {
       overlay.classList.replace('overlay-slide-right', 'overlay-slide-left');
       // Animate Out - Nav Items
       navAnimation('in', 'out');
-    //overlay.classList.add('overlay-slide-left')
     }
   }
 // Event Listeners
 menuBars.addEventListener('click', toggleNav);
 navItems.forEach((nav) => {
   nav.addEventListener('click', toggleNav);
-
- });
-nav1.addEventListener('click',toggleNav);
+// nav1.addEventListener('click',toggleNav);
 // nav2.addEventListener('click',toggleNav);
 
+});
