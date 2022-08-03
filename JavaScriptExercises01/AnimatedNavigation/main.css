@@ -21,7 +21,15 @@ body {
 }
 
 /* --- Navigation Menu ------------------------------ */
-
+.overlay {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(0,0,0, 0.7);
+}
 
 
 /* --- Menu Bars ------------------------------------ */
