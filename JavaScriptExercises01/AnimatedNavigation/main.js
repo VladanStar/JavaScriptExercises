@@ -21,8 +21,8 @@ function toggleNav() {
    // overlay.classList.toggle('overlay-active');
     if (overlay.classList.contains('overlay-active')) {
       // Animate In - Overlay
-      overlay.classList.add('overlay-slide-right')
-      //overlay.classList.replace('overlay-slide-left', 'overlay-slide-right');
+      //overlay.classList.add('overlay-slide-right')
+      overlay.classList.replace('overlay-slide-left', 'overlay-slide-right');
       // Animate In - Nav Items
       navAnimation('out', 'in');
     } else {
@@ -35,10 +35,10 @@ function toggleNav() {
   }
 // Event Listeners
 menuBars.addEventListener('click', toggleNav);
-// navItems.forEach((nav) => {
-//   nav.addEventListener('click', toggleNav);
+navItems.forEach((nav) => {
+  nav.addEventListener('click', toggleNav);
 
-// });
+ });
 nav1.addEventListener('click',toggleNav);
 // nav2.addEventListener('click',toggleNav);
 
