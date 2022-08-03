@@ -16,17 +16,20 @@ function toggleNav() {
       // Animate In - Overlay
       overlay.classList.replace('overlay-slide-left', 'overlay-slide-right');
       // Animate In - Nav Items
-      navAnimation('out', 'in');
+    //   navAnimation('out', 'in');
     } else {
       // Animate Out - Overlay
       overlay.classList.replace('overlay-slide-right', 'overlay-slide-left');
       // Animate Out - Nav Items
-      navAnimation('in', 'out');
+    //   navAnimation('in', 'out');
     }
   }
 // Event Listeners
 menuBars.addEventListener('click', toggleNav);
-navItems.forEach((nav) => {
-  nav.addEventListener('click', toggleNav);
-});
+// navItems.forEach((nav) => {
+//   nav.addEventListener('click', toggleNav);
+
+// });
+nav1.addEventListener('click',toggleNav);
+nav2.addEventListener('click',toggleNav)
 
