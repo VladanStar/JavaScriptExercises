@@ -19,7 +19,30 @@ function validateForm() {
       messageContainer.style.borderColor = 'red';
       return;
     }
-}
+    // Check to see if both password fields match
+    if (password1El.value === password2El.value) {
+      // If they match, set value to true and borders to green
+      passwordsMatch = true;
+      password1El.style.borderColor = 'green';
+      password2El.style.borderColor = 'green';
+    } else {
+      // If they don't match, border color of input to red, change message
+      passwordsMatch = false;
+      message.textContent = 'Make sure passwords match.';
+      message.style.color = 'red';
+      messageContainer.style.borderColor = 'red';
+      password1El.style.borderColor = 'red';
+      password2El.style.borderColor = 'red';
+      return;
+    }
+    // If form is valid and passwords match
+    if (isValid && passwordsMatch) {
+      // Style main message for success
+      message.textContent = 'Successfully Registered!';
+      message.style.color = 'green';
+      messageContainer.style.borderColor = 'green';
+    }
+  }
 // Event Listener
 form.addEventListener("submit", processFormData);
 
