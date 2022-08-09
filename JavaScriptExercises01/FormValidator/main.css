@@ -48,3 +48,10 @@ input {
   box-sizing: border-box;
   transition: all 0.3s;
 }
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
