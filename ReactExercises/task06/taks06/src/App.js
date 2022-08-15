@@ -11,7 +11,8 @@ function App() {
     {id:3,text:"Comment Three"}
   ]
 
-  const loading = true;
+  const loading = false;
+  const showComments = true;
 
   if(loading) return <h1>Loading...</h1>
   return (
@@ -20,15 +21,16 @@ function App() {
       <h1>Vladan Cupric</h1>
       <h2>{title.toUpperCase()}</h2>
       <p>{body}</p>
-      {Math.random}
-      <div className="commnet">
+      {showComments ? (<div className="commnet">
         <h3>Comments ({comments.length})</h3>
         <ul>
           {comments.map((comment, id)=>(
             <li> key= {id}{comment.text}</li>
           ))}
         </ul>
-      </div>
+      </div>): null}
+      {Math.random}
+      
     
     </div>
   );
