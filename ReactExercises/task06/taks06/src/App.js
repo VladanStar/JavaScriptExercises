@@ -10,6 +10,10 @@ function App() {
     {id:2,text:"Comment Two"},
     {id:3,text:"Comment Three"}
   ]
+
+  const loading = true;
+
+  if(loading) return <h1>Loading...</h1>
   return (
     <div className="App">
    
