@@ -21,7 +21,7 @@ function App() {
         <h3>Comments ({comments.length})</h3>
         <ul>
           {comments.map((comment, id)=>(
-            <li>{comment.text}</li>
+            <li> key= {id}{comment.text}</li>
           ))}
         </ul>
       </div>
